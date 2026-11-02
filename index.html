@@ -1,644 +1,1328 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>KP Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-<!--   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishnpal Patel | Senior Full-Stack, Agentic AI & DevOps Engineer (8+ Yrs)</title>
+  <meta name="description" content="Portfolio of Krishnpal Patel - Senior Full-Stack Engineer, Agentic AI Builder (Python), and DevOps Specialist with 8+ years experience based in Bhopal, India.">
+  <meta name="keywords" content="Krishnpal Patel, Senior Full-Stack Engineer, Agentic AI, Python, DevOps, Docker, CI/CD, Laravel, PHP, Atlassian Agents, Bhopal Developer">
+  <meta name="author" content="Krishnpal Patel">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- Ambient Background Lighting -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="#hero" class="logo" id="brandLogo">
+          <span class="logo-badge">KP</span>
+          <span>Krishnpal Patel</span>
+        </a>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Krishnpal Patel</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/krishnpal-patel" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#linkedin" class="nav-link">LinkedIn</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="nav-resume-btn" title="Download Krishnpal Patel Resume">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume</span>
+          </a>
+          <a href="#contact" class="nav-btn">Hire Me</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Krishnpal Patel</h1>
-      <p>I'm <span class="typed" data-typed-items="Developer,Designer, Freelancer"></span></p>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-experience-badge">
+            <span class="pulse-dot"></span>
+            <span>8+ Years Experience • Freelance: Available</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Krishnpal Patel</span>
+          </h1>
+
+          <div class="hero-role">
+            <span>I'm a&nbsp;</span>
+            <span class="gradient-text" id="typewriterText" style="font-weight: 700;">Developer</span>
+            <span class="typewriter-cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-desc">
+            Senior Full-Stack & AI Engineer with 8+ years of expertise. Specializing in high-performance backends (PHP / Laravel), autonomous <strong>Agentic AI workflows (Python)</strong>, and modern <strong>DevOps pipelines (Docker, Git & CI/CD)</strong> for scalable production systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroViewProjectsBtn">
+              <span>View My Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="btn btn-outline-cyan" id="heroDownloadResumeBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="https://wa.me/917415840868" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="heroWhatsAppBtn">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Quick Info Pills -->
+          <div class="quick-info-bar">
+            <div class="info-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Bhopal, India</span>
+            </div>
+            <div class="info-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+91 7415840868</span>
+            </div>
+            <div class="info-pill status-badge-available">
+              <span class="pulse-dot" style="width: 6px; height: 6px;"></span>
+              <span>Freelance: Available</span>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>8+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>50+</h3>
+              <p>Projects Delivered</p>
+            </div>
+            <div class="stat-item">
+              <h3>AI+</h3>
+              <p>Agentic AI & Python</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Preview -->
+        <div class="hero-code-wrapper">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="terminal-title">KrishnpalPatel.php</div>
+            </div>
+            <div class="terminal-body">
+              <p><span class="php-tag">&lt;?php</span></p>
+              <br>
+              <p><span class="php-keyword">declare</span>(strict_types=1);</p>
+              <br>
+              <p><span class="php-keyword">namespace</span> App\Architect;</p>
+              <br>
+              <p><span class="php-keyword">final readonly class</span> <span class="php-class">KrishnpalPatel</span> {</p>
+              <p>&nbsp;&nbsp;<span class="php-keyword">public function</span> <span class="php-class">__construct</span>(</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$name</span> = <span class="php-string">'Krishnpal Patel'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$location</span> = <span class="php-string">'Bhopal, India'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public int</span> <span class="php-variable">$experience</span> = <span class="php-string">8</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$freelance</span> = <span class="php-string">'Available'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public array</span> <span class="php-variable">$roles</span> = [<span class="php-string">'Full-Stack Engineer'</span>, <span class="php-string">'AI Agent Builder'</span>, <span class="php-string">'DevOps'</span>],</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public array</span> <span class="php-variable">$capabilities</span> = [</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'PHP 8.x & Laravel'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Agentic AI (Python)'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Docker & CI/CD Pipelines'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Atlassian Custom Agents'</span>,</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+              <p>&nbsp;&nbsp;) {}</p>
+              <br>
+              <p>&nbsp;&nbsp;<span class="php-keyword">public function</span> <span class="php-class">execute</span>(): <span class="php-keyword">string</span> {</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">return</span> <span class="php-string">'Shipping resilient architectures, intelligent AI agents & streamlined pipelines.'</span>;</p>
+              <p>&nbsp;&nbsp;}</p>
+              <p>}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
-  <main id="main">
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Architecting systems with precision & reliability</h2>
+        <p class="section-subtitle">Bridging business logic, modern PHP engineering, and enterprise architecture.</p>
+      </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
+      <div class="about-grid">
+        <div class="about-text">
           <p>
-            I am a passionate and results-oriented Senior Developer with over 7+ years of experience crafting dynamic, user-friendly, and high-performing web applications using PHP,Laravel, CodeIgniter,C#,ASP.Net,HTML, CSS, JavaScript, and MySQL. Currently at Quasar Digital Solutions, I leverage my full-stack development expertise to deliver innovative solutions that meet client needs and exceed expectations.
-       </p>
-            <div class="row mt-2">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img-about.jpg" class="img-fluid" alt="">
+            With over <strong>8 years of dedicated experience in PHP</strong> and modern web architectures, I have led backend development for fast-growing startups and enterprise platforms. My journey spans from core procedural code to cutting-edge PHP 8.x, enterprise Laravel microservices, and asynchronous event queues.
+          </p>
+          <p>
+            I focus heavily on clean code (SOLID principles, Domain-Driven Design), database indexing, Redis caching layers, and high-concurrency payment/billing flows.
+          </p>
+          <p>
+            Whether building new SaaS products from zero to one or optimizing existing legacy codebases for 10x traffic spikes, I ensure maximum maintainability, security, and scalability.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-icon">⚡</div>
+              <h4>Performance Tuning</h4>
+              <p>OPcache, Redis caching, query profiling, and response time reduction.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🛡️</div>
+              <h4>Security First</h4>
+              <p>OWASP compliance, CSRF/XSS protection, and secure auth flows.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🏛️</div>
+              <h4>Clean Architecture</h4>
+              <p>Repository pattern, Service layer, SOLID standards, and automated testing.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🔄</div>
+              <h4>API & Integrations</h4>
+              <p>Complex 3rd-party integrations, payment gateways, and webhooks.</p>
+            </div>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Software Engineer</h3>
-            <p class="mb-3"> 
-              As a skilled professional, I specialize in designing, building, and maintaining websites and web applications. 
-              My expertise covers a wide array of programming languages such as PHP, HTML, CSS, and JavaScript.
+        </div>
+
+        <div class="about-card card">
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.3rem;">Core Engineering Highlights</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-muted); font-size: 0.95rem;">
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
+              <span><strong>8+ Years Experience:</strong> Hands-on full life-cycle delivery from requirement gathering to production deployment.</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
+              <span><strong>PHP 8.x Mastery:</strong> Strict types, JIT, attributes, constructor promotion, fibers, and match expressions.</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
+              <span><strong>High Volume Data:</strong> MySQL indexing, query optimization, partitioning, and replication handling.</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
+              <span><strong>Full Stack Flexibility:</strong> Strong frontend coordination with modern JavaScript, APIs, and headless setups.</span>
+            </li>
+          </ul>
+
+          <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color);">
+            <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center; gap: 0.6rem; font-size: 0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Full Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tech Stack -->
+  <section id="skills" style="background: rgba(17, 24, 39, 0.4);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Technical Arsenal</span>
+        <h2 class="section-title">Skills & Capabilities</h2>
+        <p class="section-subtitle">Categorized competencies across full-stack PHP, Python, modern software engineering, and Agentic AI.</p>
+      </div>
+
+      <!-- Category: AI & Agentic Systems (Special Showcase) -->
+      <div class="ai-systems-box">
+        <div class="ai-systems-header">
+          <div class="ai-systems-title">
+            <span style="font-size: 2rem;">🤖</span>
+            <div>
+              <h3 style="font-size: 1.45rem; font-weight: 700; color: #fff; margin-bottom: 0.15rem;">AI & Agentic Systems</h3>
+              <p style="font-size: 0.9rem; color: #d8b4fe; margin-bottom: 0;">Autonomous agent architecture, Atlassian integrations, and private self-hosted LLM setups</p>
+            </div>
+          </div>
+          <span class="ai-systems-badge">⚡ Advanced AI Stack</span>
+        </div>
+
+        <div class="ai-subcat-grid">
+          <!-- 1. Agent Platforms -->
+          <div class="ai-subcat-card">
+            <div class="ai-subcat-title">
+              <span>🛠️</span>
+              <span>1. Agent Platforms</span>
+            </div>
+            <div class="skill-subgroup">
+              <span class="skill-subgroup-label">Atlassian Rovo Agents</span>
+              <div class="skill-tags">
+                <span class="ai-agent-pill">Jira Agent</span>
+                <span class="ai-agent-pill">Confluence Agent</span>
+                <span class="ai-agent-pill">BRD Creator</span>
+                <span class="ai-agent-pill">SRS Creator</span>
+                <span class="ai-agent-pill">Jira Ticket Creator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Agent Concepts -->
+          <div class="ai-subcat-card">
+            <div class="ai-subcat-title">
+              <span>🧠</span>
+              <span>2. Agent Concepts & Core Architecture</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge featured">Prompt Engineering & System Prompts</span>
+              <span class="skill-badge featured">Tool / Function Calling</span>
+              <span class="skill-badge">RAG Basics</span>
+              <span class="skill-badge">Structured Outputs</span>
+              <span class="skill-badge">Memory (Short-term & Long-term)</span>
+              <span class="skill-badge">Token Management (Context & Cost Control)</span>
+              <span class="skill-badge">File Read / Upload Handling</span>
+            </div>
+          </div>
+
+          <!-- 3. LLM Integration & AI-Assisted Development -->
+          <div class="ai-subcat-card">
+            <div class="ai-subcat-title">
+              <span>🔌</span>
+              <span>3. LLM Integration & AI-Assisted Dev</span>
+            </div>
+            <div class="skill-tags" style="margin-bottom: 1rem;">
+              <span class="skill-badge featured">OpenAI (GPT)</span>
+              <span class="skill-badge featured">Google Gemini</span>
+              <span class="skill-badge featured">Qwen (Self-Hosted LLM)</span>
+              <span class="skill-badge">Python API Integration</span>
+            </div>
+            <div class="ai-note-box">
+              <strong>Private AI Setup:</strong> Configured Continue in the IDE with a self-hosted Qwen model for private, AI-assisted coding without sending proprietary code to external third-party services.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 Core Software Engineering Categories Grid -->
+      <div class="skills-grid">
+        <!-- 1. Backend / Languages -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">🐘</div>
+            <h3>1. Backend / Languages</h3>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Core Languages</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">PHP</span>
+              <span class="skill-badge featured">Python</span>
+            </div>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Frameworks & CMS</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">Laravel</span>
+              <span class="skill-badge featured">FastAPI (Python)</span>
+              <span class="skill-badge">CodeIgniter</span>
+              <span class="skill-badge">WordPress</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Frontend -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">💻</div>
+            <h3>2. Frontend</h3>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Core Technologies</span>
+            <div class="skill-tags">
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge featured">JavaScript (ES6+)</span>
+            </div>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Frameworks & Styling</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">Bootstrap</span>
+              <span class="skill-badge featured">Tailwind CSS</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">jQuery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Database -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">💾</div>
+            <h3>3. Database</h3>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Relational & NoSQL</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">MySQL</span>
+              <span class="skill-badge featured">MongoDB</span>
+              <span class="skill-badge">Query Optimization</span>
+              <span class="skill-badge">Schema Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. APIs & Integration -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">🌐</div>
+            <h3>4. APIs & Integration</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-badge featured">REST API Design</span>
+            <span class="skill-badge featured">JWT / OAuth Authentication</span>
+            <span class="skill-badge featured">Payment Gateways (Stripe)</span>
+            <span class="skill-badge">Third-Party API Integration</span>
+            <span class="skill-badge">Webhooks</span>
+          </div>
+        </div>
+
+        <!-- 5. DevOps & Deployment -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">☁️</div>
+            <h3>5. DevOps & Deployment</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-badge featured">Git</span>
+            <span class="skill-badge featured">GitHub</span>
+            <span class="skill-badge featured">Bitbucket</span>
+            <span class="skill-badge featured">Docker</span>
+            <span class="skill-badge">CI/CD (GitHub Actions)</span>
+            <span class="skill-badge">AWS</span>
+            <span class="skill-badge">cPanel Hosting</span>
+          </div>
+        </div>
+
+        <!-- 6. Tools -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">🛠️</div>
+            <h3>6. Tools</h3>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Development Environments</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">VS Code</span>
+              <span class="skill-badge featured">Antigravity</span>
+              <span class="skill-badge">PhpStorm</span>
+              <span class="skill-badge">PyCharm</span>
+            </div>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Package & Project Management</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">Postman</span>
+              <span class="skill-badge">Composer</span>
+              <span class="skill-badge">pip</span>
+              <span class="skill-badge">Jira</span>
+              <span class="skill-badge">Trello</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Testing & Quality -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">🧪</div>
+            <h3>7. Testing & Quality</h3>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Testing Frameworks</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">PHPUnit</span>
+              <span class="skill-badge featured">PyTest</span>
+            </div>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Engineering Standards</span>
+            <div class="skill-tags">
+              <span class="skill-badge">Debugging</span>
+              <span class="skill-badge">Code Review</span>
+              <span class="skill-badge featured">Clean Code</span>
+              <span class="skill-badge">MVC</span>
+              <span class="skill-badge">OOP</span>
+              <span class="skill-badge">Design Patterns</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Security -->
+        <div class="card">
+          <div class="skill-category-title">
+            <div class="skill-category-icon">🛡️</div>
+            <h3>8. Security</h3>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Vulnerability Mitigation</span>
+            <div class="skill-tags">
+              <span class="skill-badge featured">SQL Injection Prevention</span>
+              <span class="skill-badge featured">XSS Mitigation</span>
+              <span class="skill-badge featured">CSRF Protection</span>
+            </div>
+          </div>
+          <div class="skill-subgroup">
+            <span class="skill-subgroup-label">Protocols & Validation</span>
+            <div class="skill-tags">
+              <span class="skill-badge">Input Validation</span>
+              <span class="skill-badge">Password Hashing</span>
+              <span class="skill-badge">HTTPS & SSL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Chronological progression of technical leadership and backend development.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Developer</h3>
+                <span class="timeline-company">Quasar Digital Solutions</span>
+              </div>
+              <span class="timeline-period">September 2021 — Present</span>
+            </div>
+            <p class="timeline-desc">
+              Playing a pivotal role in designing dynamic, user-friendly, and enterprise-grade web applications. Mentoring junior developers, driving architectural decisions, and fostering a collaborative, productive development environment. Architecting full-stack solutions leveraging Agentic AI, Python, PHP, Laravel, and robust REST APIs. Streamlining delivery workflows with Jira, Confluence, Bitbucket, Git, SourceTree, and Trello.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-       <!--            <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 7415840868</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bhopal, India</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-         <!--          <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>krishna.beohari@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
+            <div class="timeline-tags">
+              <span>Agentic AI</span>
+              <span>Python</span>
+              <span>PHP & Laravel</span>
+              <span>REST APIs</span>
+              <span>MySQL</span>
+              <span>Jira & Confluence</span>
+              <span>Bitbucket / Git</span>
+              <span>Bootstrap & JS</span>
             </div>
-           
           </div>
         </div>
 
+        <!-- Experience Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Web Developer</h3>
+                <span class="timeline-company">Infledge Infotech Pvt. Ltd, Bhopal</span>
+              </div>
+              <span class="timeline-period">January 2019 — September 2021</span>
+            </div>
+            <p class="timeline-desc">
+              Led the design, full-stack development, and maintenance of diverse client websites and business portals. Built modular back-ends utilizing PHP, JSON, RESTful APIs, and MySQL. Crafted responsive, interactive front-ends with Bootstrap, HTML5, CSS3, and JavaScript (including jQuery and AJAX) ensuring fast load times and seamless user experiences.
+            </p>
+            <div class="timeline-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>REST APIs</span>
+              <span>JSON</span>
+              <span>JavaScript / jQuery</span>
+              <span>AJAX</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Web Developer</h3>
+                <span class="timeline-company">Start login Software's, Bhopal</span>
+              </div>
+              <span class="timeline-period">September 2016 — October 2018</span>
+            </div>
+            <p class="timeline-desc">
+              Gained deep foundational experience in web engineering by collaborating closely with senior developers across multiple production tasks. Contributed actively to building responsive website front-ends using HTML, CSS, and JavaScript while mastering back-end fundamentals with hands-on exposure to PHP and MySQL databases.
+            </p>
+            <div class="timeline-tags">
+              <span>Core PHP</span>
+              <span>MySQL</span>
+              <span>HTML5 & CSS3</span>
+              <span>JavaScript</span>
+              <span>Web Standards</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </section>
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>The numbers tell part of the story, but there's much more to discover! See how I can help you achieve your goals.</p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <!-- consequuntur quae --></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Years of experience</strong> <!-- aut commodi quaerat --></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>completed Projects</strong> <!-- adipisci atque cum quia aut --></p>
-            </div>
-          </div>
-
-  
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Technologies </strong> <!-- rerum asperiores dolor --></p>
-            </div>
-          </div>
-
-        </div>
-
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education & Qualifications</h2>
+        <p class="section-subtitle">Solid technical foundations in Computer Science and Software Engineering principles.</p>
       </div>
-    </section><!-- End Facts Section -->
 
-      <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
-        <div class="container">
-  
-          <div class="section-title">
-            <h2>Resume</h2>
-            <p>Explore my portfolio to see how I transform your visions into attractive and functional web experiences.</p>
-          </div>
-  
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Professional Experience</h3>
-              <div class="resume-item">
-                <h4>Senior Web Developer</h4>
-                <h5>September 2021 - Present</h5>
-                <p><em>Quasar Digital Solutions </em></p>
-                <ul>
-                  <li>In this role I played a key role in designing dynamic and user-friendly web applications.</li>
-                  <li>guiding junior developers and fostering a collaborative development environment.</li>
-                  <li>I leveraged my full-stack development expertise using PHP,LARAVEL, JSON, APIs, MySQL, Bootstrap, HTML, CSS, JavaScript, and query languages to deliver high-quality web applications. </li>
-                  <li>I also employed version control systems like Bitbucket, Git and project management tools like SourceTree and Trello to streamline development workflows and ensure efficient code delivery.</li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Senior Web Developer</h4>
-                <h5>January 2019 – September 2021</h5>
-                <p><em>Infledge infotech Pvt. Ltd Bhopal</em></p>
-                <ul>
-                 <li>As a Senior Web Developer at Infledge Infotech, I played a key role in the design, development, and maintenance of various websites.</li>
-                 <li>I leveraged my full-stack expertise in PHP, JSON, APIs, and MySQL for back-end development, and Bootstrap, HTML, CSS, JavaScript (including jQuery and Ajax) for the front-end.</li>
-                 <li>This allowed me to create user-friendly and interactive web experiences.</li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Junior Web Developer</h4>
-                <h5>September 2016 – October 2018</h5>
-                <p><em>Start login Software's, Bhopal</em></p>
-                <ul>
-                  <li>In this role, I gained valuable experience as a web developer, assisting senior developers with various web development tasks.</li>
-                  <li>I actively participated in building websites by contributing to the front-end using HTML, CSS, and JavaScript. </li>
-                  <li>I also learned the fundamentals of back-end development with exposure to PHP and MySQL.</li>
-                </ul>
-              </div>
+      <div class="education-grid">
+        <!-- Education 1 -->
+        <div class="education-card">
+          <div>
+            <div class="education-icon-wrap">🎓</div>
+            <h3 class="education-degree">Bachelor of Computer Science (BE)</h3>
+            <div class="education-institution">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Technocrats Group of Institutions (TIT), Bhopal</span>
             </div>
-            <div class="col-lg-6" data-aos="fade-up">
-  
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Bachelor of Computer Science</h4>
-                <h5>2014 - 2017</h5>
-                <p><em>Technocrats Group of Institutions, Bhopal</em></p>
-                <p>A Bachelor of Engineering (BE) in Computer Science is a four-year undergraduate degree program that provides a broad foundation in computer science principles and engineering practices.</p>
-             
-             
-              </div>
-              <div class="resume-item">
-                <h4>Diploma In Computer Science</h4>
-                <h5>2011 - 2014</h5>
-                <p><em>Govt. Polytechnic College Anuppur  </em></p>
-                <p>A Diploma in Computer Science is a career-oriented program typically lasting 1-3 years, designed to equip students with the technical skills and knowledge needed for entry-level positions in the IT field.</p>
-              </div>
-              
-            </div>
-          
+            <p class="education-desc">
+              Comprehensive undergraduate engineering program providing a rigorous foundation in computer science principles, data structures, algorithms, software engineering lifecycle, database management systems, and advanced computing practices.
+            </p>
           </div>
-  
-        </div>
-      </section><!-- End Resume Section -->
-  
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Explore my skills and how I can help you build something amazing! ,This Skills I've honed over the years.</p>
+          <div class="education-meta">
+            <span class="education-period">2014 — 2017</span>
+            <span class="skill-badge featured" style="font-size: 0.75rem;">Degree Program</span>
+          </div>
         </div>
 
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+        <!-- Education 2 -->
+        <div class="education-card">
+          <div>
+            <div class="education-icon-wrap">📜</div>
+            <h3 class="education-degree">Diploma in Computer Science</h3>
+            <div class="education-institution">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Govt. Polytechnic College, Anuppur</span>
             </div>
-            <div class="progress">
-              <span class="skill">CODEIGNITER <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">React js <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">HTML <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-        
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">BOOTSTRAP <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">JQUERY <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-      
-
+            <p class="education-desc">
+              Career-oriented engineering diploma focused on foundational computer engineering, programming fundamentals, computer networking, hardware architecture, and practical IT competencies.
+            </p>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-        
-            <div class="progress">
-              <span class="skill">Laravel <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-           
-            <div class="progress">
-              <span class="skill">MYSQL <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">ASP.NET <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Flutter<i class="val">30%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">WEB SERVICES <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">GIT <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+          <div class="education-meta">
+            <span class="education-period">2011 — 2014</span>
+            <span class="skill-badge" style="font-size: 0.75rem;">Polytechnic Diploma</span>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Skills Section -->
+    </div>
+  </section>
 
-  
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
+  <!-- Featured Projects -->
+  <section id="projects" style="background: rgba(17, 24, 39, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Case Studies & AI Innovations</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world production architectures, autonomous AI workflows, and high-scale web platforms.</p>
+      </div>
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>This is a collection of development projects I've worked on. Explore my portfolio and discover the power of innovative web development.</p>
+      <!-- Flagship Project: Atlassian AI Agents Pipeline -->
+      <div class="pipeline-showcase-box">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="project-badge" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: var(--accent-cyan);">
+              🤖 Flagship AI Innovation • Atlassian Rovo
+            </span>
+            <h3 style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); color: #fff; margin-top: 0.5rem; letter-spacing: -0.02em;">
+              End-to-End Requirements-to-Tickets AI Pipeline
+            </h3>
+          </div>
+          <span class="status-badge-available" style="padding: 0.35rem 0.85rem; border-radius: 50px; font-size: 0.825rem; font-weight: 600;">
+            ✔ In Active Production Use
+          </span>
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-         <!--      <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li> -->
+        <!-- Tagline Banner -->
+        <div class="pipeline-quote-banner">
+          “Built and use AI agents on Atlassian Rovo for documentation and project workflow automation: <strong>BRD Creator</strong>, <strong>SRS Creator</strong> and <strong>Jira Ticket Creator</strong>, forming an end-to-end requirements-to-tickets pipeline.”
+        </div>
+
+        <!-- Visual Pipeline Flow Diagram -->
+        <div class="pipeline-flow-container">
+          <div class="pipeline-flow-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            <span>Automated Requirements-to-Tickets Pipeline Architecture</span>
+          </div>
+
+          <div class="pipeline-diagram">
+            <!-- Step 1 -->
+            <div class="pipeline-step">
+              <span class="pipeline-step-num">STEP 1</span>
+              <div class="pipeline-step-icon">📝</div>
+              <div class="pipeline-step-name">Client Requirements</div>
+              <div class="pipeline-step-desc">Raw feature notes & client briefs</div>
+            </div>
+
+            <div class="pipeline-arrow">➔</div>
+
+            <!-- Step 2 -->
+            <div class="pipeline-step" style="border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.05);">
+              <span class="pipeline-step-num" style="background: rgba(56, 189, 248, 0.2);">AI AGENT #1</span>
+              <div class="pipeline-step-icon">📄</div>
+              <div class="pipeline-step-name">BRD Creator Agent</div>
+              <div class="pipeline-step-desc">Generates complete Confluence BRD</div>
+            </div>
+
+            <div class="pipeline-arrow">➔</div>
+
+            <!-- Step 3 -->
+            <div class="pipeline-step" style="border-color: rgba(99, 102, 241, 0.4); background: rgba(99, 102, 241, 0.05);">
+              <span class="pipeline-step-num" style="background: rgba(99, 102, 241, 0.2); color: #c7d2fe;">AI AGENT #2</span>
+              <div class="pipeline-step-icon">⚙️</div>
+              <div class="pipeline-step-name">SRS Creator Agent</div>
+              <div class="pipeline-step-desc">Produces technical specifications</div>
+            </div>
+
+            <div class="pipeline-arrow">➔</div>
+
+            <!-- Step 4 -->
+            <div class="pipeline-step" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.05);">
+              <span class="pipeline-step-num" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">AI AGENT #3</span>
+              <div class="pipeline-step-icon">🎫</div>
+              <div class="pipeline-step-name">Jira Ticket Creator</div>
+              <div class="pipeline-step-desc">Epics, Stories, Tasks & Subtasks</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="pipeline-metrics-strip">
+          <div class="metric-card">
+            <div class="metric-icon-box">⏱️</div>
+            <div>
+              <h4>4h ➔ 20 Mins</h4>
+              <p>BRD creation time reduced by over 85%</p>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">⚡</div>
+            <div>
+              <h4>60% Time Saved</h4>
+              <p>Overall documentation & review lifecycle</p>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">🎯</div>
+            <div>
+              <h4>100% Traceability</h4>
+              <p>Zero manual ticket generation errors</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Individual Agents Breakdown Cards -->
+        <div class="agents-grid">
+          <!-- Agent 1 -->
+          <div class="agent-card">
+            <div>
+              <div class="agent-header">
+                <div class="agent-icon">📄</div>
+                <div>
+                  <h4 class="agent-title">BRD Creator Agent</h4>
+                  <span style="font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">Atlassian Rovo / Confluence</span>
+                </div>
+              </div>
+              <p class="agent-desc">
+                Automatically translates raw client requirements and meeting transcripts into structured, comprehensive Business Requirement Documents (BRDs) directly inside Confluence.
+              </p>
+            </div>
+            <div>
+              <span class="agent-impact-tag">Impact: BRD time cut from 4h to 20m</span>
+              <div class="project-tech" style="margin-bottom: 0;">
+                <span>Atlassian Rovo</span>
+                <span>Confluence</span>
+                <span>Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent 2 -->
+          <div class="agent-card">
+            <div>
+              <div class="agent-header">
+                <div class="agent-icon" style="color: #a855f7; background: rgba(168, 85, 247, 0.1);">⚙️</div>
+                <div>
+                  <h4 class="agent-title">SRS Creator Agent</h4>
+                  <span style="font-size: 0.75rem; color: #c084fc; font-family: var(--font-mono);">System Specifications</span>
+                </div>
+              </div>
+              <p class="agent-desc">
+                Ingests the generated BRD to produce precise Software Requirement Specifications (SRS) with technical constraints, schema structures, and acceptance criteria.
+              </p>
+            </div>
+            <div>
+              <span class="agent-impact-tag" style="background: rgba(168, 85, 247, 0.1); border-color: rgba(168, 85, 247, 0.3); color: #d8b4fe;">Impact: Maximum consistency & speed</span>
+              <div class="project-tech" style="margin-bottom: 0;">
+                <span>System Architecture</span>
+                <span>Structured Output</span>
+                <span>Technical Specs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent 3 -->
+          <div class="agent-card">
+            <div>
+              <div class="agent-header">
+                <div class="agent-icon" style="color: #10b981; background: rgba(16, 185, 129, 0.1);">🎫</div>
+                <div>
+                  <h4 class="agent-title">Jira Ticket Creator Agent</h4>
+                  <span style="font-size: 0.75rem; color: #34d399; font-family: var(--font-mono);">Automated Backlog Generation</span>
+                </div>
+              </div>
+              <p class="agent-desc">
+                Breaks down the SRS into fully articulated Jira Epics, User Stories, Tasks, and Sub-tasks with acceptance criteria and priority tagging ready for sprint planning.
+              </p>
+            </div>
+            <div>
+              <span class="agent-impact-tag">Impact: Zero manual ticket creation</span>
+              <div class="project-tech" style="margin-bottom: 0;">
+                <span>Jira REST API</span>
+                <span>Epics & Subtasks</span>
+                <span>Backlog Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-bottom: 2rem; margin-top: 2rem;">
+        <span class="section-tag">Enterprise Web Systems</span>
+        <h3 style="font-size: 1.8rem; color: #fff;">Web Engineering & Full-Stack Projects</h3>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: HappyFeet -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0;">⚽ Core PHP • Sports Fintech SaaS (Web, iOS, Android)</span>
+              <span class="timeline-period" style="font-size: 0.75rem;">Jul 2024 – Aug 2026</span>
+            </div>
+            <h3 class="project-title">HappyFeet — Sports Fintech & Youth Soccer SaaS</h3>
+            <p class="project-desc">
+              Web and mobile application ecosystem built in <strong>Core PHP</strong> for youth soccer and fitness programs, helping children develop a love for sports and health while providing franchises with an automated business and billing platform.
+            </p>
+
+            <!-- Instant Glance Fintech Highlights Pill -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                💳 Stripe Payment Gateway
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
+                🔄 Webhooks & Auto-Sync
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(251, 191, 36, 0.1); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); font-weight: 600;">
+                📅 Subscription Management
+              </span>
+            </div>
+
+            <!-- Original 4 Clean Modules -->
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Subscription Management:</strong> Automated recurring membership management, plan renewals, and payment flows via Stripe & Webhooks.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>League & School Class Management:</strong> Dynamic scheduling, school roster assignments, and curriculum management.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Real-Time Attendance:</strong> Instant digital attendance check-ins synced across Web, iOS, and Android.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Staff & Coach Management:</strong> Coach dispatch, timesheet logs, session feedback, and admin oversight.</li>
             </ul>
           </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(251, 191, 36, 0.12); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25);">Core PHP</span>
+              <span style="background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25);">Payment Gateway (Stripe)</span>
+              <span>Webhooks</span>
+              <span>Subscription Engine</span>
+              <span>RESTful APIs (iOS/Android)</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link">
+                <span>Inquire About Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Project 2: Center Management System -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(99, 102, 241, 0.12); border-color: rgba(99, 102, 241, 0.3); color: #c7d2fe;">
+                🏛️ Non-Profit & Community SaaS • Web & iOS
+              </span>
+              <span class="timeline-period" style="font-size: 0.75rem;">Enterprise Platform</span>
+            </div>
+            <h3 class="project-title">Center Management System (CMS)</h3>
+            <p class="project-desc">
+              All-in-one centralized SaaS solution engineered for non-profit organizations and multi-branch community centers to unite people, maximize donor contributions, lower engagement costs, and streamline organization-wide operations.
+            </p>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ismartparking.com"><i class="bx bx-plus"></i></a>
-                 <a href="https://ismartparking.com/" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
+            <!-- Quick Modules Pill -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
+                💳 Donation & Payment Portal
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(168, 85, 247, 0.1); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.25); font-weight: 600;">
+                🎓 Learning Management (LMS)
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.1); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                📅 Events & Calendars
+              </span>
             </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="iserviceforce.com"><i class="bx bx-plus"></i></a>
-                <a href="https://iserviceforce.com/" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>One-Place Center Admin:</strong> Centralized dashboard for multi-center oversight, facility bookings, and branch administration.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Events & Interactive Calendars:</strong> Community scheduling, automated RSVP tracking, and calendar sync.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Learning Management System:</strong> Digital course modules, community training curricula, and participant progress logs.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Donation & Payment Portal:</strong> Secure payment processing for recurring donor pledges, one-time contributions, and receipts.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Memberships, Groups & Communication:</strong> Member directories, family accounts, broadcast announcements, and targeted group feeds.</li>
+            </ul>
+          </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(244, 63, 94, 0.12); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.25);">Laravel</span>
+              <span>MySQL</span>
+              <span>REST APIs (iOS)</span>
+              <span>Donation Gateway</span>
+              <span>LMS Module</span>
+              <span>RBAC</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link">
+                <span>Inquire About Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Digital Directory"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Fitness Engine"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-             <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Membership Portal"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="hawkems.bayyan.org"><i class="bx bx-plus"></i></a>
-                <a href="https://hawkems.bayyan.org" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-<!--
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
- -->
         </div>
 
+        <!-- Project 3: I Service Force (ISF) -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
+                📍 Field Service SaaS • Web & Android
+              </span>
+              <span class="status-badge-available" style="padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem;">
+                ● Live Production
+              </span>
+            </div>
+            <h3 class="project-title">I Service Force (ISF) — Field Service Management SaaS</h3>
+            <p class="project-desc">
+              Comprehensive web and mobile application engineered for field service management businesses, optimizing end-to-end field operations from customer complaint logging and technician dispatch to real-time resource tracking and swift automated invoicing.
+            </p>
+
+            <!-- Quick Modules Pill -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
+                📍 Live Location Tracking
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.1); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                📲 Mobile Attendance
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(251, 191, 36, 0.1); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); font-weight: 600;">
+                🎫 Complaint Management
+              </span>
+            </div>
+
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Complaint Management:</strong> Complete lifecycle tracking from customer complaint intake to rapid technician dispatch and customer sign-off.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Live Location Tracking:</strong> Real-time GPS location tracking and route mapping of on-ground technicians for intelligent job dispatching.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Mobile Attendance:</strong> Geofenced digital attendance and punch-in/out directly via the Android mobile application.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Staff Monitoring & Invoicing:</strong> Real-time task status oversight, technician productivity metrics, resource management, and swift automated invoicing.</li>
+            </ul>
+          </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(56, 189, 248, 0.12); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25);">PHP</span>
+              <span>MySQL</span>
+              <span>RESTful APIs (Android)</span>
+              <span>Live Location Tracking</span>
+              <span>Invoicing Engine</span>
+              <span>Field Operations</span>
+            </div>
+            <div class="project-links">
+              <a href="https://iserviceforce.com/" target="_blank" rel="noopener noreferrer" class="project-link" style="color: var(--accent-cyan); font-weight: 700;">
+                <span>Visit Live Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="#contact" class="project-link">
+                <span>Inquire Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Portfolio Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>We offer a wide range of services designed to meet the diverse needs of our customers. From web development and design to digital marketing and consulting, we provide complete solutions.</p>
+      <!-- More Projects Banner / CTA -->
+      <div style="margin-top: 2.75rem; text-align: center; background: rgba(17, 24, 39, 0.6); border: 1px dashed rgba(56, 189, 248, 0.3); border-radius: 16px; padding: 2.25rem 1.5rem; backdrop-filter: var(--glass-blur);">
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan); background: rgba(56, 189, 248, 0.1); padding: 0.3rem 0.8rem; border-radius: 50px; margin-bottom: 0.85rem; border: 1px solid rgba(56, 189, 248, 0.25);">
+          <span>🚀 Explore Complete Portfolio</span>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Front-End Development</a></h4>
-            <p class="description">Front-End Development is the art and science of bringing websites and applications to life for users.
-              It involves crafting visually appealing interfaces (UI) with HTML, CSS, and JavaScript. 
-              This includes designing layouts, styling elements, and adding interactive features.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Back-End Development</a></h4>
-            <p class="description">
-              Back-End Development acts as the engine that powers websites and applications. 
-              It involves managing databases, server logic, and ensuring smooth communication between the server and the client-side (front-end). 
-         
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Full-Stack Development</a></h4>
-            <p class="description">
-              Full-stack development involves proficiency in both front-end and back-end technologies, 
-              We are capable of building entire web applications from start to finish, handling tasks such as user interface design, server logic, database management, and system architecture. 
-            </p>  
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Website Maintenance and Support</a></h4>
-            <p class="description">
-              Websites, like cars, need regular check-ups to keep them running smoothly. That's where Website Maintenance and Support comes In this role.
-              This includes activities such as updating content, fixing bugs, applying security patches, and optimizing performance to enhance the user experience and maintain the website.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Website Optimization</a></h4>
-            <p class="description">
-             Website optimization refers to the process of improving various aspects of a website to enhance its performance, user experience, and achieve specific business goals.
-             This includes optimizing website speed, ensuring mobile responsiveness, improving search engine visibility, and enhancing overall usability. 
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Consulting</a></h4>
-            <p class="description">
-              Consulting involves providing expert advice, guidance, and solutions to individuals, businesses, or organizations. 
-              Consultants leverage their specialized knowledge, skills, and experience in a particular industry or field to analyze problems, identify opportunities, and solutions.
-
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>We're here to listen Don't wait! Get in touch and turn your web dreams into reality.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-12 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Bhopal</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>krishna.beohari@gmail.com.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 7415840868</p>
-              </div>
-
-            
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.190767490208!2d77.44541853881545!3d23.199717410082474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43b7db99edfd%3A0x7021fa73fc9484a5!2sSurendra%20Palace%2C%20Narayan%20Nagar%2C%20Bhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1714036022784!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-             
-          </div>
-
-         <!--  <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
- -->
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-  <!--     <div class="copyright">
-        &copy; Copyright <strong><span>KP</span></strong>
-      </div> -->
-      <div class="credits">
-       Designed by <a href="#">Krishnpal</a>
+        <h4 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem;">Looking for more enterprise architectures?</h4>
+        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 580px; margin: 0 auto 1.5rem auto;">
+          Explore all production platforms including <strong>iSmart Parking</strong> (AI ANPR CCTV, FASTag & IoT Mobility), complete architecture blueprints, and case studies.
+        </p>
+        <a href="projects.html" class="btn btn-primary" id="viewAllProjectsBtn" style="display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1.85rem; font-weight: 700; border-radius: 10px;">
+          <span>View All Projects & Architectures</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </section>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Architecture Philosophy -->
+  <section id="architecture">
+    <div class="container">
+      <div class="architecture-box">
+        <span class="section-tag">Engineering Approach</span>
+        <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">How I Build & Scale Applications</h2>
+        <p style="color: var(--text-muted); max-width: 700px; font-size: 1.05rem;">
+          High-performance applications require more than just code; they demand careful schema design, strategic caching, and defensive programming.
+        </p>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        <div class="architecture-grid">
+          <div class="arch-item">
+            <h4>1. Database First</h4>
+            <p>Carefully planned schemas, foreign keys, optimal composite indexing, and avoiding N+1 query pitfalls.</p>
+          </div>
+          <div class="arch-item">
+            <h4>2. Smart Caching</h4>
+            <p>Multi-tiered caching with Redis for hot read queries, cache invalidation tags, and session management.</p>
+          </div>
+          <div class="arch-item">
+            <h4>3. Async Processing</h4>
+            <p>Offloading long-running jobs (emails, reports, webhook triggers) to background workers and queues.</p>
+          </div>
+          <div class="arch-item">
+            <h4>4. Automated Quality</h4>
+            <p>Unit & integration testing with PHPUnit, strict static analysis via PHPStan, and automated CI/CD.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Template Main JS File -->
+  <!-- LinkedIn Showcase Section -->
+  <section id="linkedin" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="linkedin-showcase-box">
+        <div class="linkedin-showcase-grid">
+          <!-- Left Column: Story & Call to action -->
+          <div>
+            <div class="linkedin-badge-tag">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>Professional Network</span>
+            </div>
+
+            <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 1rem; color: #fff;">
+              Let's Connect on <span style="color: #38bdf8;">LinkedIn</span>
+            </h2>
+
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.75rem;">
+              I regularly connect with engineering leaders, startup founders, and developers to discuss <strong>high-scale PHP 8 architectures</strong>, <strong>Agentic AI orchestration (Python)</strong>, and <strong>custom Atlassian agent automation</strong>.
+            </p>
+
+            <div class="linkedin-reasons">
+              <div class="linkedin-reason-item">
+                <div class="linkedin-reason-icon">🚀</div>
+                <div>
+                  <h4>Collaboration & Consulting</h4>
+                  <p>Open for freelance contracts, high-impact senior engineering roles, and system architecture advisory.</p>
+                </div>
+              </div>
+
+              <div class="linkedin-reason-item">
+                <div class="linkedin-reason-icon">🤖</div>
+                <div>
+                  <h4>Agentic AI & Backend Engineering</h4>
+                  <p>Sharing practical insights on building autonomous agents, MCP tools, and modern backend resilience.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="https://www.linkedin.com/in/krishnpal-patel/" target="_blank" rel="noopener noreferrer" class="btn-linkedin" id="connectLinkedInBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>Connect with Krishnpal</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Profile Preview Card -->
+          <div>
+            <div class="linkedin-profile-card">
+              <div class="linkedin-card-cover"></div>
+              <div class="linkedin-card-body">
+                <div class="linkedin-avatar-wrapper">
+                  <div class="linkedin-avatar">
+                    <span>KP</span>
+                  </div>
+                  <div class="linkedin-verified-badge" title="Verified Professional">✔</div>
+                </div>
+
+                <div class="linkedin-card-info">
+                  <h3 class="linkedin-name">
+                    <span>Krishnpal Patel</span>
+                    <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-dim);">(He/Him)</span>
+                  </h3>
+                  <p class="linkedin-headline">
+                    Senior Developer at Quasar Digital Solutions | 8+ Years in Full-Stack PHP & Laravel | Agentic AI (Python) | Atlassian Specialist
+                  </p>
+                  <p class="linkedin-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Bhopal, Madhya Pradesh, India</span>
+                  </p>
+                  <p class="linkedin-connections">500+ Connections • Open to Network</p>
+
+                  <div class="linkedin-actions">
+                    <a href="https://www.linkedin.com/in/krishnpal-patel/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.875rem;">
+                      <span>View Full Profile</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krishnpal-patel/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.6rem 1.25rem; font-size: 0.875rem;">
+                      <span>Send Message</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Discuss Your Next Project</h2>
+        <p class="section-subtitle">Looking for an experienced Senior Full-Stack PHP Developer, Agentic AI Engineer, or Technical Consultant?</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards-grid">
+          <!-- Email -->
+          <a href="mailto:krishna.beohari@gmail.com" class="contact-card" id="contactEmailCard">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>krishna.beohari@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Phone / WhatsApp -->
+          <a href="https://wa.me/917415840868" target="_blank" rel="noopener noreferrer" class="contact-card" id="contactPhoneCard">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Phone & WhatsApp</h4>
+              <p>+91 7415840868</p>
+            </div>
+          </a>
+
+          <!-- Location -->
+          <div class="contact-card" id="contactLocationCard">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Bhopal, India</p>
+            </div>
+          </div>
+
+          <!-- Freelance Availability -->
+          <div class="contact-card" id="contactFreelanceCard" style="border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.05);">
+            <div class="contact-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">
+              <span class="pulse-dot"></span>
+            </div>
+            <div class="contact-details">
+              <h4 style="color: #34d399;">Freelance Availability</h4>
+              <p style="color: #d1fae5;">Available for contract & remote projects</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Temporarily hidden for backend integration)
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. rahul@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject / Project Requirement</label>
+              <input type="text" id="subject" class="form-input" placeholder="e.g. Senior PHP Consultation / Project Inquiry" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me about your project, timeline, and requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <div id="formFeedback" style="display: none; margin-top: 1rem; font-size: 0.9rem; text-align: center;"></div>
+          </form>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/krishnpal-patel/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:krishna.beohari@gmail.com" class="social-icon" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; <span id="currentYear"></span> Krishnpal Patel. Senior Full-Stack PHP & Agentic AI Developer. Bhopal, India.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>

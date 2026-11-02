@@ -1,0 +1,86 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 4473 >>
+stream
+BT /F2 18 Tf 50 790 Td (KRISHNPAL PATEL) Tj ET
+BT /F2 11 Tf 50 772 Td (Senior Full-Stack PHP & Agentic AI Engineer \(8+ Years Experience\)) Tj ET
+BT /F1 9 Tf 50 756 Td (Bhopal, MP, India  |  +91 7415840868  |  krishna.beohari@gmail.com  |  linkedin.com/in/krishnpal-patel) Tj ET
+0.7 0.7 0.7 RG 1 w 50 746 m 545 746 l S
+BT /F2 10 Tf 50 732 Td (PROFESSIONAL SUMMARY) Tj ET
+BT /F1 8.5 Tf 50 718 Td (Senior Software Engineer with 8+ years of dedicated expertise architecting high-performance web applications,) Tj ET
+BT /F1 8.5 Tf 50 706 Td (scalable REST APIs, secure payment infrastructure, and autonomous Agentic AI systems. Proven record leading backend) Tj ET
+BT /F1 8.5 Tf 50 694 Td (development, optimizing MySQL databases, deploying Docker pipelines, and building Atlassian Rovo agent workflows.) Tj ET
+BT /F2 10 Tf 50 674 Td (CORE TECHNICAL COMPETENCIES) Tj ET
+BT /F2 8.5 Tf 50 660 Td (AI & Agentic Systems:) Tj ET
+BT /F1 8.5 Tf 160 660 Td (Atlassian Rovo Agents \(BRD, SRS, Jira\), Tool Calling, Prompt Eng, Structured Outputs, Qwen, Gemini, GPT) Tj ET
+BT /F2 8.5 Tf 50 648 Td (Backend & Languages:) Tj ET
+BT /F1 8.5 Tf 160 648 Td (PHP 8.x, Python, Laravel, CodeIgniter, FastAPI, WordPress, OOP, Clean Code, Design Patterns) Tj ET
+BT /F2 8.5 Tf 50 636 Td (APIs & Integration:) Tj ET
+BT /F1 8.5 Tf 160 636 Td (REST API Design, Stripe Payment Gateway & Webhooks, Subscriptions, OAuth, JWT) Tj ET
+BT /F2 8.5 Tf 50 624 Td (Databases & Storage:) Tj ET
+BT /F1 8.5 Tf 160 624 Td (MySQL \(Complex Indexing, Partitioning, Query Optimization\), MongoDB, Redis) Tj ET
+BT /F2 8.5 Tf 50 612 Td (DevOps & Cloud:) Tj ET
+BT /F1 8.5 Tf 160 612 Td (Docker, Git, GitHub Actions, AWS, cPanel hosting, VS Code, PhpStorm, Postman) Tj ET
+BT /F2 8.5 Tf 50 600 Td (Security & Quality:) Tj ET
+BT /F1 8.5 Tf 160 600 Td (OWASP \(SQLi, XSS, CSRF\), Password Hashing, PHPUnit, PyTest, Automated CI/CD) Tj ET
+BT /F2 10 Tf 50 580 Td (PROFESSIONAL WORK EXPERIENCE) Tj ET
+BT /F2 9.5 Tf 50 566 Td (Senior Developer  -  Quasar Digital Solutions) Tj ET
+BT /F1 8.5 Tf 420 566 Td (Sept 2021 - Present) Tj ET
+BT /F1 8.5 Tf 60 554 Td (- Architected enterprise SaaS backends in Laravel & Core PHP handling multi-tenant billing & GPS tracking.) Tj ET
+BT /F1 8.5 Tf 60 542 Td (- Built autonomous Atlassian Rovo Agents pipeline saving 60% documentation time \(4h to 20m\) and Jira automation.) Tj ET
+BT /F1 8.5 Tf 60 530 Td (- Engineered high-throughput Stripe payment subscription flows and webhook reconciliation layers.) Tj ET
+BT /F2 9.5 Tf 50 510 Td (Senior Web Developer  -  Infledge Infotech Pvt. Ltd, Bhopal) Tj ET
+BT /F1 8.5 Tf 420 510 Td (Jan 2019 - Sept 2021) Tj ET
+BT /F1 8.5 Tf 60 498 Td (- Led backend development for mobile APIs \(iOS & Android\) and high-concurrency client CMS platforms.) Tj ET
+BT /F1 8.5 Tf 60 486 Td (- Optimized relational database schemas, query execution plans, and caching strategies.) Tj ET
+BT /F2 9.5 Tf 50 466 Td (Junior Web Developer  -  Start login Software's, Bhopal) Tj ET
+BT /F1 8.5 Tf 420 466 Td (Sept 2016 - Oct 2018) Tj ET
+BT /F1 8.5 Tf 60 454 Td (- Developed modular PHP/MySQL features, interactive frontend interfaces, and third-party API integrations.) Tj ET
+BT /F2 10 Tf 50 434 Td (KEY FEATURED PROJECTS) Tj ET
+BT /F2 8.5 Tf 50 420 Td (Atlassian AI Agents:) Tj ET
+BT /F1 8.5 Tf 160 420 Td (Requirements -> BRD -> SRS -> Jira Tickets end-to-end autonomous documentation pipeline.) Tj ET
+BT /F2 8.5 Tf 50 408 Td (iSmart Parking:) Tj ET
+BT /F1 8.5 Tf 160 408 Td (AI ANPR with normal CCTV, FASTag tolling & IoT boom barrier automation \(ismartparking.com\).) Tj ET
+BT /F2 8.5 Tf 50 396 Td (HappyFeet SaaS:) Tj ET
+BT /F1 8.5 Tf 160 396 Td (Sports Fintech in Core PHP with automated Stripe subscriptions & class rosters across Web/Mobile.) Tj ET
+BT /F2 8.5 Tf 50 384 Td (I Service Force:) Tj ET
+BT /F1 8.5 Tf 160 384 Td (Field service SaaS with live GPS location tracking, technician dispatch, invoicing \(iserviceforce.com\).) Tj ET
+BT /F2 8.5 Tf 50 372 Td (Center Management:) Tj ET
+BT /F1 8.5 Tf 160 372 Td (Non-profit community SaaS with Laravel, MySQL, donation portal, LMS, and iOS mobile APIs.) Tj ET
+BT /F2 10 Tf 50 350 Td (EDUCATION) Tj ET
+BT /F2 8.5 Tf 50 336 Td (Bachelor of Computer Science \(BE\):) Tj ET
+BT /F1 8.5 Tf 230 336 Td (Technocrats Group of Institutions \(TIT\), Bhopal  \(2014 - 2017\)) Tj ET
+BT /F2 8.5 Tf 50 322 Td (Diploma in Computer Science:) Tj ET
+BT /F1 8.5 Tf 230 322 Td (Govt. Polytechnic College, Anuppur  \(2011 - 2014\)) Tj ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000004776 00000 n 
+0000004846 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4921
+%%EOF

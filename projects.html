@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Projects & Architecture Case Studies | Krishnpal Patel</title>
+  <meta name="description" content="Complete portfolio of Krishnpal Patel - Featuring Agentic AI Systems, Atlassian Rovo Agents, High-Scale PHP & Laravel SaaS platforms, IoT Mobility, and Fintech solutions.">
+  <meta name="keywords" content="Krishnpal Patel, Portfolio, Projects, Agentic AI, PHP, Laravel, SaaS, iSmart Parking, ISF, HappyFeet, Atlassian Agents">
+  <meta name="author" content="Krishnpal Patel">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo" id="brandLogo">
+          <span class="logo-badge">KP</span>
+          <span>Krishnpal Patel</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="projects.html" class="nav-link active" style="color: var(--accent-cyan); font-weight: 700;">All Projects</a></li>
+          <li><a href="index.html#linkedin" class="nav-link">LinkedIn</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 0.65rem;">
+          <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="nav-resume-btn" title="Download Krishnpal Patel Resume">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Resume</span>
+          </a>
+          <a href="index.html#contact" class="nav-btn">Hire Me</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner / Header Section -->
+  <section class="section" style="padding-top: 8rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div style="margin-bottom: 1.5rem;">
+        <a href="index.html#projects" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; font-family: var(--font-mono); margin-bottom: 1.25rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Home Portfolio</span>
+        </a>
+        <div class="hero-experience-badge" style="display: inline-flex; margin-bottom: 1rem;">
+          <span class="pulse-dot"></span>
+          <span>Complete Engineering Showcase • Production Systems</span>
+        </div>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem;">
+          Featured Projects & <span class="gradient-text">System Architectures</span>
+        </h1>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px; line-height: 1.7;">
+          A complete portfolio archive of production systems I have architected and built over 8+ years—ranging from autonomous <strong>Agentic AI workflows on Atlassian Rovo</strong>, high-scale <strong>PHP & Laravel SaaS platforms</strong>, to <strong>IoT mobility platforms with AI ANPR & FASTag</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Projects Section -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+
+      <!-- AI Flagship Showcase -->
+      <div class="card" style="margin-bottom: 3rem; background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 20px; padding: clamp(1.5rem, 3vw, 2.5rem); position: relative; overflow: hidden; box-shadow: 0 20px 40px -15px rgba(56, 189, 248, 0.15);">
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); color: var(--accent-cyan); font-weight: 700;">
+                🤖 AI Flagship Project • Atlassian Rovo
+              </span>
+              <span class="status-badge-available" style="padding: 0.2rem 0.65rem; border-radius: 50px; font-size: 0.75rem;">
+                ● Production Workflow
+              </span>
+            </div>
+            <h3 style="font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: #fff; margin-bottom: 0.35rem;">
+              End-to-End Autonomous AI Documentation & Jira Pipeline
+            </h3>
+            <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.9rem;">
+              Built on Atlassian Rovo: BRD Creator ➔ SRS Creator ➔ Jira Ticket Creator
+            </p>
+          </div>
+
+          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); padding: 0.75rem 1.25rem; border-radius: 12px; text-align: right;">
+            <div style="font-size: 1.4rem; font-weight: 800; color: #34d399; font-family: var(--font-mono);">
+              4h ➔ 20min
+            </div>
+            <div style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px;">
+              BRD Creation Time Saved
+            </div>
+          </div>
+        </div>
+
+        <blockquote style="font-size: 1rem; color: #e2e8f0; line-height: 1.7; margin-bottom: 1.75rem; border-left: 3px solid var(--accent-cyan); padding-left: 1.25rem; background: rgba(255, 255, 255, 0.02); padding-top: 0.75rem; padding-bottom: 0.75rem; border-radius: 0 8px 8px 0;">
+          “Built and use AI agents on <strong>Atlassian Rovo</strong> for documentation and project workflow automation: <strong>BRD Creator</strong>, <strong>SRS Creator</strong>, and <strong>Jira Ticket Creator</strong>, forming an end-to-end requirements-to-tickets pipeline.”
+        </blockquote>
+
+        <div style="margin-bottom: 2rem; background: rgba(10, 14, 23, 0.6); padding: 1.25rem; border-radius: 12px; border: 1px dashed rgba(56, 189, 248, 0.25);">
+          <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 1px;">
+            ⚡ Autonomous Pipeline Flow
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+            <div style="background: rgba(255,255,255,0.04); padding: 0.6rem 1rem; border-radius: 8px; border: 1px solid var(--border-color); flex: 1; min-width: 140px; text-align: center;">
+              <span style="font-size: 0.75rem; color: var(--text-dim); display: block;">Input</span>
+              <strong style="color: #fff; font-size: 0.85rem;">Client Requirements</strong>
+            </div>
+            <span style="color: var(--accent-cyan); font-weight: bold;">➔</span>
+            <div style="background: rgba(56, 189, 248, 0.1); padding: 0.6rem 1rem; border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.3); flex: 1; min-width: 140px; text-align: center;">
+              <span style="font-size: 0.75rem; color: var(--accent-cyan); display: block;">Agent 1</span>
+              <strong style="color: #fff; font-size: 0.85rem;">BRD Creator</strong>
+            </div>
+            <span style="color: var(--accent-cyan); font-weight: bold;">➔</span>
+            <div style="background: rgba(99, 102, 241, 0.1); padding: 0.6rem 1rem; border-radius: 8px; border: 1px solid rgba(99, 102, 241, 0.3); flex: 1; min-width: 140px; text-align: center;">
+              <span style="font-size: 0.75rem; color: #a5b4fc; display: block;">Agent 2</span>
+              <strong style="color: #fff; font-size: 0.85rem;">SRS Creator</strong>
+            </div>
+            <span style="color: var(--accent-cyan); font-weight: bold;">➔</span>
+            <div style="background: rgba(168, 85, 247, 0.1); padding: 0.6rem 1rem; border-radius: 8px; border: 1px solid rgba(168, 85, 247, 0.3); flex: 1; min-width: 140px; text-align: center;">
+              <span style="font-size: 0.75rem; color: #c084fc; display: block;">Agent 3</span>
+              <strong style="color: #fff; font-size: 0.85rem;">Jira Ticket Creator</strong>
+            </div>
+            <span style="color: #34d399; font-weight: bold;">➔</span>
+            <div style="background: rgba(16, 185, 129, 0.1); padding: 0.6rem 1rem; border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.3); flex: 1; min-width: 140px; text-align: center;">
+              <span style="font-size: 0.75rem; color: #34d399; display: block;">Output</span>
+              <strong style="color: #fff; font-size: 0.85rem;">Epics, Stories & Sub-tasks</strong>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;">
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.2rem;">📄</span>
+              <h4 style="font-size: 1.05rem; color: #fff;">BRD Creator Agent</h4>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+              Raw requirements aur stakeholder discussions se structured <strong>Business Requirement Document (BRD)</strong> generate karta hai.
+            </p>
+            <div style="font-size: 0.8rem; font-family: var(--font-mono); color: #34d399; background: rgba(16, 185, 129, 0.08); padding: 0.4rem 0.6rem; border-radius: 6px; border: 1px solid rgba(16, 185, 129, 0.2);">
+              🎯 <strong>Impact:</strong> Documentation time <strong>60% saved</strong> (4 ghante ka kaam 20 minute me).
+            </div>
+          </div>
+
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.2rem;">📐</span>
+              <h4 style="font-size: 1.05rem; color: #fff;">SRS Creator Agent</h4>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+              Generated BRD se deep technical <strong>Software Requirement Specification (SRS)</strong> tayyar karta hai without any manual gaps.
+            </p>
+            <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan); background: rgba(56, 189, 248, 0.08); padding: 0.4rem 0.6rem; border-radius: 6px; border: 1px solid rgba(56, 189, 248, 0.2);">
+              🎯 <strong>Impact:</strong> 100% technical consistency aur high execution speed across teams.
+            </div>
+          </div>
+
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.2rem;">🎫</span>
+              <h4 style="font-size: 1.05rem; color: #fff;">Jira Ticket Creator Agent</h4>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+              SRS specs se direct Jira tickets create karta hai (Epics, User Stories, Engineering Tasks aur granular Sub-tasks).
+            </p>
+            <div style="font-size: 0.8rem; font-family: var(--font-mono); color: #c084fc; background: rgba(168, 85, 247, 0.08); padding: 0.4rem 0.6rem; border-radius: 6px; border: 1px solid rgba(168, 85, 247, 0.2);">
+              🎯 <strong>Impact:</strong> Eliminates manual sprint backlog creation time completely.
+            </div>
+          </div>
+        </div>
+
+        <div class="project-meta" style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.25rem;">
+          <div class="project-tech">
+            <span style="background: rgba(56, 189, 248, 0.15); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.3);">Atlassian Rovo</span>
+            <span>Rovo Agents</span>
+            <span>Jira Automation API</span>
+            <span>Confluence Sync</span>
+            <span>Prompt Orchestration</span>
+            <span>Structured Outputs</span>
+          </div>
+          <div class="project-links">
+            <a href="index.html#contact" class="project-link" style="color: var(--accent-cyan); font-weight: 700;">
+              <span>Inquire About Agent Automation</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17l9.2-9.2M17 17V8H8"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Title for Web & SaaS Projects -->
+      <div style="margin-bottom: 2rem;">
+        <span class="section-tag" style="margin-bottom: 0.25rem;">Full-Stack & Cloud Systems</span>
+        <h2 style="font-size: 1.8rem; color: #fff;">Production SaaS, Fintech & IoT Platforms</h2>
+      </div>
+
+      <!-- All Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: HappyFeet -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0;">⚽ Core PHP • Sports Fintech SaaS (Web, iOS, Android)</span>
+              <span class="timeline-period" style="font-size: 0.75rem;">Jul 2024 – Aug 2026</span>
+            </div>
+            <h3 class="project-title">HappyFeet — Sports Fintech & Youth Soccer SaaS</h3>
+            <p class="project-desc">
+              Web and mobile application ecosystem built in <strong>Core PHP</strong> for youth soccer and fitness programs, helping children develop a love for sports and health while providing franchises with an automated business and billing platform.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                💳 Stripe Payment Gateway
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
+                🔄 Webhooks & Auto-Sync
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(251, 191, 36, 0.1); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); font-weight: 600;">
+                📅 Subscription Management
+              </span>
+            </div>
+
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Subscription Management:</strong> Automated recurring membership management, plan renewals, and payment flows via Stripe & Webhooks.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>League & School Class Management:</strong> Dynamic scheduling, school roster assignments, and curriculum management.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Real-Time Attendance:</strong> Instant digital attendance check-ins synced across Web, iOS, and Android.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Staff & Coach Management:</strong> Coach dispatch, timesheet logs, session feedback, and admin oversight.</li>
+            </ul>
+          </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(251, 191, 36, 0.12); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25);">Core PHP</span>
+              <span style="background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25);">Payment Gateway (Stripe)</span>
+              <span>Webhooks</span>
+              <span>Subscription Engine</span>
+              <span>RESTful APIs (iOS/Android)</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="index.html#contact" class="project-link">
+                <span>Inquire About Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Center Management System -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(99, 102, 241, 0.12); border-color: rgba(99, 102, 241, 0.3); color: #c7d2fe;">
+                🏛️ Non-Profit & Community SaaS • Web & iOS
+              </span>
+              <span class="timeline-period" style="font-size: 0.75rem;">Enterprise Platform</span>
+            </div>
+            <h3 class="project-title">Center Management System (CMS)</h3>
+            <p class="project-desc">
+              All-in-one centralized SaaS solution engineered for non-profit organizations and multi-branch community centers to unite people, maximize donor contributions, lower engagement costs, and streamline organization-wide operations.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
+                💳 Donation & Payment Portal
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(168, 85, 247, 0.1); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.25); font-weight: 600;">
+                🎓 Learning Management (LMS)
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.1); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                📅 Events & Calendars
+              </span>
+            </div>
+
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>One-Place Center Admin:</strong> Centralized dashboard for multi-center oversight, facility bookings, and branch administration.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Events & Interactive Calendars:</strong> Community scheduling, automated RSVP tracking, and calendar sync.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Learning Management System:</strong> Digital course modules, community training curricula, and participant progress logs.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Donation & Payment Portal:</strong> Secure payment processing for recurring donor pledges, one-time contributions, and receipts.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Memberships, Groups & Communication:</strong> Member directories, family accounts, broadcast announcements, and targeted group feeds.</li>
+            </ul>
+          </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(244, 63, 94, 0.12); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.25);">Laravel</span>
+              <span>MySQL</span>
+              <span>REST APIs (iOS)</span>
+              <span>Donation Gateway</span>
+              <span>LMS Module</span>
+              <span>RBAC</span>
+            </div>
+            <div class="project-links">
+              <a href="index.html#contact" class="project-link">
+                <span>Inquire About Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: I Service Force (ISF) -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
+                📍 Field Service SaaS • Web & Android
+              </span>
+              <span class="status-badge-available" style="padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem;">
+                ● Live Production
+              </span>
+            </div>
+            <h3 class="project-title">I Service Force (ISF) — Field Service Management SaaS</h3>
+            <p class="project-desc">
+              Comprehensive web and mobile application engineered for field service management businesses, optimizing end-to-end field operations from customer complaint logging and technician dispatch to real-time resource tracking and swift automated invoicing.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
+                📍 Live Location Tracking
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.1); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                📲 Mobile Attendance
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(251, 191, 36, 0.1); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); font-weight: 600;">
+                🎫 Complaint Management
+              </span>
+            </div>
+
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Complaint Management:</strong> Complete lifecycle tracking from customer complaint intake to rapid technician dispatch and customer sign-off.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Live Location Tracking:</strong> Real-time GPS location tracking and route mapping of on-ground technicians for intelligent job dispatching.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Mobile Attendance:</strong> Geofenced digital attendance and punch-in/out directly via the Android mobile application.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Staff Monitoring & Invoicing:</strong> Real-time task status oversight, technician productivity metrics, resource management, and swift automated invoicing.</li>
+            </ul>
+          </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(56, 189, 248, 0.12); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25);">PHP</span>
+              <span>MySQL</span>
+              <span>RESTful APIs (Android)</span>
+              <span>Live Location Tracking</span>
+              <span>Invoicing Engine</span>
+              <span>Field Operations</span>
+            </div>
+            <div class="project-links">
+              <a href="https://iserviceforce.com/" target="_blank" rel="noopener noreferrer" class="project-link" style="color: var(--accent-cyan); font-weight: 700;">
+                <span>Visit Live Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="index.html#contact" class="project-link">
+                <span>Inquire Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: iSmart Parking -->
+        <div class="card project-card">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3); color: var(--accent-cyan);">
+                🚗 AI & IoT Mobility SaaS • Web, Android & Desktop
+              </span>
+              <span class="status-badge-available" style="padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem;">
+                ● Live Production
+              </span>
+            </div>
+            <h3 class="project-title">iSmart Parking — AI-Powered Parking Management Platform</h3>
+            <p class="project-desc">
+              India’s advanced cloud SaaS platform transitioning manual parking into an intelligent, cashless, and automated mobility ecosystem—managing multi-site parking, valet, FASTag tolling, and IoT hardware from a single pane of glass.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(168, 85, 247, 0.12); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.25); font-weight: 600;">
+                🤖 AI ANPR (Normal CCTV)
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                ⚡ FASTag & Cashless
+              </span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(251, 191, 36, 0.1); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); font-weight: 600;">
+                🚧 Boom Barrier IoT
+              </span>
+            </div>
+
+            <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>AI ANPR with Normal CCTV:</strong> Automatic Number Plate Recognition powered by computer vision using standard CCTV cameras without proprietary hardware.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>FASTag & Cashless Tolling:</strong> Frictionless barrier opening and automated payment collection via FASTag integration and digital checkout.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Valet & Visitor Management:</strong> Digital valet tracking, parking pass issuance, vehicle retrieval notices, and visitor access control.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Boom Barrier & Hardware Integration:</strong> Direct IoT controller interfacing with automated boom barriers, thermal printers, and POS devices.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Unified Android & Desktop Suite:</strong> Live multi-site occupancy dashboards, real-time revenue analytics, and centralized operator control.</li>
+            </ul>
+          </div>
+          <div class="project-meta">
+            <div class="project-tech">
+              <span style="background: rgba(56, 189, 248, 0.12); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25);">PHP</span>
+              <span>RESTful APIs</span>
+              <span>AI ANPR / Vision</span>
+              <span>FASTag Integration</span>
+              <span>IoT Hardware Sync</span>
+              <span>MySQL</span>
+              <span>Android App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ismartparking.com/login" target="_blank" rel="noopener noreferrer" class="project-link" style="color: var(--accent-cyan); font-weight: 700;">
+                <span>Visit Live Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="index.html#contact" class="project-link">
+                <span>Inquire Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17l9.2-9.2M17 17V8H8"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom CTA Banner to Hire / Discuss Projects -->
+      <div style="margin-top: 4rem; text-align: center; background: rgba(17, 24, 39, 0.7); border: 1px solid var(--border-color); border-radius: 16px; padding: 3rem 2rem;">
+        <span class="section-tag">Have a project in mind?</span>
+        <h3 style="font-size: 1.8rem; color: #fff; margin-bottom: 0.75rem;">Need a Senior Architect or Custom AI Pipeline?</h3>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 1.75rem auto;">
+          Whether it is building custom Atlassian AI agents, scalable PHP 8 / Laravel systems, or high-throughput API integrations, let's discuss your requirements.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contact" class="btn btn-primary">
+            <span>Get in Touch</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="https://wa.me/917415840868" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>WhatsApp (+91 7415840868)</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top: 4rem;">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/krishnpal-patel/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:krishna.beohari@gmail.com" class="social-icon" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; <span id="currentYear"></span> Krishnpal Patel. Senior Full-Stack PHP & Agentic AI Developer. Bhopal, India.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
