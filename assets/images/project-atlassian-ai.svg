@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="aiBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#060913"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+    <linearGradient id="nodeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="nodePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="nodeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="nodeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#aiBgGrad)"/>
+
+  <!-- Cyber Grid -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="0.8">
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="200" y1="0" x2="200" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+    <line x1="800" y1="0" x2="800" y2="420"/>
+    <line x1="1000" y1="0" x2="1000" y2="420"/>
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="220" cy="210" r="140" fill="#38bdf8" opacity="0.07" filter="url(#glow)"/>
+  <circle cx="600" cy="210" r="140" fill="#a855f7" opacity="0.07" filter="url(#glow)"/>
+  <circle cx="980" cy="210" r="140" fill="#10b981" opacity="0.07" filter="url(#glow)"/>
+
+  <!-- Top Status Bar -->
+  <g transform="translate(40, 25)">
+    <rect width="1120" height="42" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <circle cx="24" cy="21" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="21" r="5" fill="#f59e0b"/>
+    <circle cx="60" cy="21" r="5" fill="#10b981"/>
+
+    <text x="85" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#38bdf8" font-weight="700">ATLASSIAN ROVO</text>
+    <text x="210" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="12" fill="#94a3b8">Autonomous Requirements-to-Tickets AI Engine</text>
+
+    <g transform="translate(930, 9)">
+      <rect width="165" height="24" rx="12" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+      <circle cx="14" cy="12" r="3.5" fill="#10b981"/>
+      <text x="26" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="10" fill="#34d399" font-weight="700">PRODUCTION WORKFLOW</text>
+    </g>
+  </g>
+
+  <!-- Flow Data Beam Connecting Agents -->
+  <path d="M140,225 L1060,225" stroke="url(#beamGrad)" stroke-width="3" stroke-dasharray="8,6" opacity="0.6"/>
+  <path d="M140,225 L1060,225" stroke="url(#beamGrad)" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Stage 0: Client Intake (Left) -->
+  <g transform="translate(40, 140)" filter="url(#nodeShadow)">
+    <rect width="140" height="170" rx="12" fill="#0d1527" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <rect x="12" y="14" width="34" height="34" rx="8" fill="rgba(255,255,255,0.06)"/>
+    <text x="29" y="36" font-family="sans-serif" font-size="16" text-anchor="middle">📝</text>
+    <text x="14" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="9" fill="#94a3b8" font-weight="700">INPUT SOURCE</text>
+    <text x="14" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">Raw Client</text>
+    <text x="14" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#f8fafc" font-weight="700">Requirements</text>
+    <text x="14" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748b">Transcripts, calls,</text>
+    <text x="14" y="146" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748b">meeting notes</text>
+  </g>
+
+  <!-- Pulse Indicator 1 -->
+  <circle cx="210" cy="225" r="5" fill="#38bdf8" filter="url(#glow)"/>
+
+  <!-- Stage 1: AI Agent 1 (BRD Creator) -->
+  <g transform="translate(240, 115)" filter="url(#nodeShadow)">
+    <rect width="240" height="220" rx="14" fill="#0d172e" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="5" rx="2.5" fill="url(#nodeBlue)"/>
+    
+    <!-- Agent Header -->
+    <rect x="16" y="18" width="40" height="40" rx="10" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1"/>
+    <text x="36" y="44" font-family="sans-serif" font-size="20" text-anchor="middle">📄</text>
+    
+    <rect x="135" y="18" width="88" height="22" rx="11" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="179" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="9" fill="#38bdf8" font-weight="700" text-anchor="middle">ROVO AGENT 1</text>
+    
+    <text x="16" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#fff" font-weight="800">BRD Creator</text>
+    <text x="16" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#38bdf8">Confluence Document Engine</text>
+
+    <!-- Specs List -->
+    <rect x="16" y="115" width="208" height="48" rx="8" fill="rgba(0,0,0,0.3)"/>
+    <text x="26" y="133" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">• Translates unstructured client briefs</text>
+    <text x="26" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">• Complete scope &amp; user personas</text>
+
+    <!-- Metric Pill -->
+    <rect x="16" y="174" width="208" height="30" rx="6" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1"/>
+    <text x="120" y="193" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" fill="#38bdf8" font-weight="700" text-anchor="middle">⏱️ 4h ➔ 20min (-85% Time)</text>
+  </g>
+
+  <!-- Pulse Indicator 2 -->
+  <circle cx="510" cy="225" r="5" fill="#a855f7" filter="url(#glow)"/>
+
+  <!-- Stage 2: AI Agent 2 (SRS Creator) -->
+  <g transform="translate(540, 115)" filter="url(#nodeShadow)">
+    <rect width="240" height="220" rx="14" fill="#140f2e" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="5" rx="2.5" fill="url(#nodePurple)"/>
+
+    <rect x="16" y="18" width="40" height="40" rx="10" fill="rgba(168, 85, 247, 0.15)" stroke="#c084fc" stroke-width="1"/>
+    <text x="36" y="44" font-family="sans-serif" font-size="20" text-anchor="middle">⚙️</text>
+
+    <rect x="135" y="18" width="88" height="22" rx="11" fill="rgba(168, 85, 247, 0.15)"/>
+    <text x="179" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="9" fill="#c084fc" font-weight="700" text-anchor="middle">ROVO AGENT 2</text>
+
+    <text x="16" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#fff" font-weight="800">SRS Creator</text>
+    <text x="16" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#c084fc">Technical Architecture Specs</text>
+
+    <rect x="16" y="115" width="208" height="48" rx="8" fill="rgba(0,0,0,0.3)"/>
+    <text x="26" y="133" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">• Database schema &amp; API routes</text>
+    <text x="26" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">• Acceptance criteria &amp; constraints</text>
+
+    <rect x="16" y="174" width="208" height="30" rx="6" fill="rgba(168, 85, 247, 0.1)" stroke="rgba(168, 85, 247, 0.25)" stroke-width="1"/>
+    <text x="120" y="193" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" fill="#c084fc" font-weight="700" text-anchor="middle">🎯 100% Architecture Parity</text>
+  </g>
+
+  <!-- Pulse Indicator 3 -->
+  <circle cx="810" cy="225" r="5" fill="#10b981" filter="url(#glow)"/>
+
+  <!-- Stage 3: AI Agent 3 (Jira Ticket Creator) -->
+  <g transform="translate(840, 115)" filter="url(#nodeShadow)">
+    <rect width="240" height="220" rx="14" fill="#0b1b1a" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="5" rx="2.5" fill="url(#nodeGreen)"/>
+
+    <rect x="16" y="18" width="40" height="40" rx="10" fill="rgba(16, 185, 129, 0.15)" stroke="#34d399" stroke-width="1"/>
+    <text x="36" y="44" font-family="sans-serif" font-size="20" text-anchor="middle">🎫</text>
+
+    <rect x="135" y="18" width="88" height="22" rx="11" fill="rgba(16, 185, 129, 0.15)"/>
+    <text x="179" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="9" fill="#34d399" font-weight="700" text-anchor="middle">ROVO AGENT 3</text>
+
+    <text x="16" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#fff" font-weight="800">Jira Ticket Creator</text>
+    <text x="16" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">Automated Backlog Generator</text>
+
+    <rect x="16" y="115" width="208" height="48" rx="8" fill="rgba(0,0,0,0.3)"/>
+    <text x="26" y="133" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">• Epics, Stories, Tasks &amp; Subtasks</text>
+    <text x="26" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">• Automatic priority &amp; sprint tags</text>
+
+    <rect x="16" y="174" width="208" height="30" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.25)" stroke-width="1"/>
+    <text x="120" y="193" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" fill="#34d399" font-weight="700" text-anchor="middle">⚡ Zero Manual Backlog Errors</text>
+  </g>
+
+  <!-- Bottom Metric Summary Bar -->
+  <g transform="translate(40, 355)">
+    <rect width="1120" height="45" rx="10" fill="rgba(10, 14, 26, 0.85)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <text x="30" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" fill="#94a3b8">OVERALL PIPELINE IMPACT:</text>
+    
+    <g transform="translate(230, 12)">
+      <rect width="180" height="22" rx="4" fill="rgba(56, 189, 248, 0.1)"/>
+      <text x="90" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#38bdf8" font-weight="700" text-anchor="middle">🚀 60% Lifecycle Time Saved</text>
+    </g>
+
+    <g transform="translate(430, 12)">
+      <rect width="200" height="22" rx="4" fill="rgba(168, 85, 247, 0.1)"/>
+      <text x="100" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#c084fc" font-weight="700" text-anchor="middle">🔗 100% End-to-End Traceability</text>
+    </g>
+
+    <g transform="translate(650, 12)">
+      <rect width="220" height="22" rx="4" fill="rgba(16, 185, 129, 0.1)"/>
+      <text x="110" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#34d399" font-weight="700" text-anchor="middle">⚡ Continuous Jira Sprint Delivery</text>
+    </g>
+  </g>
+</svg>
+

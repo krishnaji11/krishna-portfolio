@@ -30,7 +30,7 @@
     <div class="container">
       <nav class="nav-bar">
         <a href="#hero" class="logo" id="brandLogo">
-          <span class="logo-badge">KP</span>
+          <img src="assets/images/krishnpal-avatar.svg" alt="Krishnpal Patel Avatar" class="logo-avatar">
           <span>Krishnpal Patel</span>
         </a>
 
@@ -38,21 +38,12 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#linkedin" class="nav-link">LinkedIn</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
 
-        <div style="display: flex; align-items: center; gap: 0.65rem;">
-          <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="nav-resume-btn" title="Download Krishnpal Patel Resume">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span>Resume</span>
-          </a>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
           <a href="#contact" class="nav-btn">Hire Me</a>
           <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -71,9 +62,15 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <div class="hero-experience-badge">
-            <span class="pulse-dot"></span>
-            <span>8+ Years Experience • Freelance: Available</span>
+          <div class="hero-profile-pill">
+            <img src="assets/images/krishnpal-avatar.svg" alt="Krishnpal Patel" class="hero-profile-avatar">
+            <div class="hero-profile-meta">
+              <div class="hero-profile-status">
+                <span class="pulse-dot" style="width: 7px; height: 7px;"></span>
+                <span>Available for Senior Roles &amp; Contracts</span>
+              </div>
+              <span class="hero-profile-sub">8+ Years Senior Backend &amp; Agentic AI Architect</span>
+            </div>
           </div>
 
           <h1 class="hero-title">
@@ -81,13 +78,13 @@
           </h1>
 
           <div class="hero-role">
-            <span>I'm a&nbsp;</span>
-            <span class="gradient-text" id="typewriterText" style="font-weight: 700;">Developer</span>
-            <span class="typewriter-cursor">&nbsp;</span>
+            <span class="hero-role-prefix">I'm a&nbsp;</span>
+            <span class="gradient-text" id="typewriterText">Senior Full-Stack Engineer</span>
+            <span class="typewriter-cursor" aria-hidden="true"></span>
           </div>
 
           <p class="hero-desc">
-            Senior Full-Stack & AI Engineer with 8+ years of expertise. Specializing in high-performance backends (PHP / Laravel), autonomous <strong>Agentic AI workflows (Python)</strong>, and modern <strong>DevOps pipelines (Docker, Git & CI/CD)</strong> for scalable production systems.
+            Senior Full-Stack Architect & AI Engineer with 8+ years of expertise. Specializing in high-throughput backends (PHP 8 / Laravel), autonomous <strong>Agentic AI workflows (Python)</strong>, and automated <strong>DevOps pipelines (Docker, Git & CI/CD)</strong> for mission-critical production systems.
           </p>
 
           <div class="hero-actions">
@@ -109,6 +106,16 @@
             <a href="https://wa.me/917415840868" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="heroWhatsAppBtn">
               <span>Chat on WhatsApp</span>
             </a>
+          </div>
+
+          <!-- Hero Floating Tech Tags Cloud -->
+          <div class="hero-tags-cloud">
+            <span class="tech-tag-pill">🐘 PHP 8.3 & Laravel</span>
+            <span class="tech-tag-pill">🤖 Agentic AI (Python)</span>
+            <span class="tech-tag-pill">🛠️ Atlassian Rovo Agents</span>
+            <span class="tech-tag-pill">💳 Stripe Webhooks</span>
+            <span class="tech-tag-pill">🐳 Docker & CI/CD</span>
+            <span class="tech-tag-pill">⚡ Redis & MySQL Indexing</span>
           </div>
 
           <!-- Quick Info Pills -->
@@ -148,7 +155,7 @@
           </div>
         </div>
 
-        <!-- Hero Terminal Preview -->
+        <!-- Hero Terminal Preview (Interactive Multi-Tab System IDE) -->
         <div class="hero-code-wrapper">
           <div class="terminal-window">
             <div class="terminal-header">
@@ -157,34 +164,91 @@
                 <span class="dot-yellow"></span>
                 <span class="dot-green"></span>
               </div>
-              <div class="terminal-title">KrishnpalPatel.php</div>
+              <div class="terminal-tabs">
+                <button class="terminal-tab active" data-tab="php">
+                  <span>🐘</span>
+                  <span>KrishnpalPatel.php</span>
+                </button>
+                <button class="terminal-tab" data-tab="python">
+                  <span>🤖</span>
+                  <span>RovoPipeline.py</span>
+                </button>
+                <button class="terminal-tab" data-tab="telemetry">
+                  <span>⚡</span>
+                  <span>Telemetry.json</span>
+                </button>
+              </div>
+              <button class="terminal-copy-btn" id="terminalCopyBtn" title="Copy code to clipboard">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy</span>
+              </button>
             </div>
+            
             <div class="terminal-body">
-              <p><span class="php-tag">&lt;?php</span></p>
-              <br>
-              <p><span class="php-keyword">declare</span>(strict_types=1);</p>
-              <br>
-              <p><span class="php-keyword">namespace</span> App\Architect;</p>
-              <br>
-              <p><span class="php-keyword">final readonly class</span> <span class="php-class">KrishnpalPatel</span> {</p>
-              <p>&nbsp;&nbsp;<span class="php-keyword">public function</span> <span class="php-class">__construct</span>(</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$name</span> = <span class="php-string">'Krishnpal Patel'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$location</span> = <span class="php-string">'Bhopal, India'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public int</span> <span class="php-variable">$experience</span> = <span class="php-string">8</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$freelance</span> = <span class="php-string">'Available'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public array</span> <span class="php-variable">$roles</span> = [<span class="php-string">'Full-Stack Engineer'</span>, <span class="php-string">'AI Agent Builder'</span>, <span class="php-string">'DevOps'</span>],</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public array</span> <span class="php-variable">$capabilities</span> = [</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'PHP 8.x & Laravel'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Agentic AI (Python)'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Docker & CI/CD Pipelines'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Atlassian Custom Agents'</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;]</p>
-              <p>&nbsp;&nbsp;) {}</p>
-              <br>
-              <p>&nbsp;&nbsp;<span class="php-keyword">public function</span> <span class="php-class">execute</span>(): <span class="php-keyword">string</span> {</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">return</span> <span class="php-string">'Shipping resilient architectures, intelligent AI agents & streamlined pipelines.'</span>;</p>
-              <p>&nbsp;&nbsp;}</p>
-              <p>}</p>
+              <!-- Pane 1: PHP 8.3 Class -->
+              <div class="terminal-pane active" id="pane-php">
+                <p><span class="php-tag">&lt;?php</span></p>
+                <br>
+                <p><span class="php-keyword">declare</span>(strict_types=1);</p>
+                <br>
+                <p><span class="php-keyword">namespace</span> App\Architect;</p>
+                <br>
+                <p><span class="php-keyword">final readonly class</span> <span class="php-class">KrishnpalPatel</span> {</p>
+                <p>&nbsp;&nbsp;<span class="php-keyword">public function</span> <span class="php-class">__construct</span>(</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$name</span> = <span class="php-string">'Krishnpal Patel'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$location</span> = <span class="php-string">'Bhopal, India'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public int</span> <span class="php-variable">$experience</span> = <span class="php-string">8</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public string</span> <span class="php-variable">$availability</span> = <span class="php-string">'Available for Freelance'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">public array</span> <span class="php-variable">$disciplines</span> = [</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'High-Scale PHP 8.3 & Laravel'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Agentic AI & Atlassian Rovo Pipelines'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Stripe Webhook Payment Engines'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-string">'Docker & GitHub Actions CI/CD'</span>,</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+                <p>&nbsp;&nbsp;) {}</p>
+                <br>
+                <p>&nbsp;&nbsp;<span class="php-keyword">public function</span> <span class="php-class">shipProduction</span>(): <span class="php-keyword">string</span> {</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">return</span> <span class="php-string">'Delivering zero-downtime architectures & AI automation.'</span>;</p>
+                <p>&nbsp;&nbsp;}</p>
+                <p>}</p>
+              </div>
+
+              <!-- Pane 2: Python Agentic Pipeline -->
+              <div class="terminal-pane" id="pane-python">
+                <p><span class="php-comment"># Autonomous Atlassian Rovo Agentic Pipeline</span></p>
+                <p><span class="php-keyword">from</span> rovo_agents <span class="php-keyword">import</span> RovoOrchestrator, ToolCaller</p>
+                <br>
+                <p><span class="php-keyword">class</span> <span class="php-class">RequirementPipeline</span>:</p>
+                <p>&nbsp;&nbsp;<span class="php-keyword">def</span> <span class="php-class">__init__</span>(self):</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;self.brd_agent = RovoOrchestrator(role=<span class="php-string">"BRD Creator"</span>)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;self.srs_agent = RovoOrchestrator(role=<span class="php-string">"SRS Creator"</span>)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;self.jira_agent = RovoOrchestrator(role=<span class="php-string">"Jira Ticket Creator"</span>)</p>
+                <br>
+                <p>&nbsp;&nbsp;<span class="php-keyword">def</span> <span class="php-class">execute_workflow</span>(self, raw_requirements: str) -> dict:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-comment"># Transforms client specs into verified Jira sprint backlog</span></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;brd = self.brd_agent.generate(raw_requirements)  <span class="php-comment"># 4h -> 20min (60% saved)</span></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;srs = self.srs_agent.compile_technical_specs(brd)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;tickets = self.jira_agent.create_epics_and_stories(srs)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="php-keyword">return</span> {<span class="php-string">"status"</span>: <span class="php-string">"COMPLETED"</span>, <span class="php-string">"tickets"</span>: tickets}</p>
+              </div>
+
+              <!-- Pane 3: System Telemetry -->
+              <div class="terminal-pane" id="pane-telemetry">
+                <p><span class="php-comment">// Production Telemetry & Reliability Status</span></p>
+                <p>{</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"architect"</span>: <span class="php-string">"Krishnpal Patel"</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"uptime"</span>: <span class="php-string">"99.98%"</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"production_systems_delivered"</span>: <span class="php-string">"50+"</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"experience_years"</span>: <span class="php-string">8</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"fintech_stripe_fidelity"</span>: <span class="php-string">"99.9% Webhook Reconciliation"</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"ai_agent_pipeline_savings"</span>: <span class="php-string">"4 hours down to 20 minutes"</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"database_health"</span>: <span class="php-string">"Zero N+1, Multi-tier Redis Cache"</span>,</p>
+                <p>&nbsp;&nbsp;<span class="php-string">"deployment_target"</span>: <span class="php-string">"Docker, AWS, cPanel & CI/CD"</span></p>
+                <p>}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -192,81 +256,155 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section (Executive Bento Grid) -->
   <section id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">About Me</span>
+        <span class="section-tag">Senior Architect Profile</span>
         <h2 class="section-title">Architecting systems with precision & reliability</h2>
-        <p class="section-subtitle">Bridging business logic, modern PHP engineering, and enterprise architecture.</p>
+        <p class="section-subtitle">Bridging business logic, modern PHP engineering, and autonomous Agentic AI architectures.</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            With over <strong>8 years of dedicated experience in PHP</strong> and modern web architectures, I have led backend development for fast-growing startups and enterprise platforms. My journey spans from core procedural code to cutting-edge PHP 8.x, enterprise Laravel microservices, and asynchronous event queues.
-          </p>
-          <p>
-            I focus heavily on clean code (SOLID principles, Domain-Driven Design), database indexing, Redis caching layers, and high-concurrency payment/billing flows.
-          </p>
-          <p>
-            Whether building new SaaS products from zero to one or optimizing existing legacy codebases for 10x traffic spikes, I ensure maximum maintainability, security, and scalability.
-          </p>
+      <div class="bento-grid">
+        <!-- Bento 1: Large Main Narrative & Architecture Pillars -->
+        <div class="bento-card bento-card-main">
+          <div>
+            <!-- Senior Architect Identity Banner -->
+            <div class="bento-architect-header">
+              <img src="assets/images/krishnpal-avatar.svg" alt="Krishnpal Patel" class="bento-avatar-img">
+              <div>
+                <h4 class="bento-architect-name">Krishnpal Patel</h4>
+                <p class="bento-architect-title">Senior Full-Stack Architect &amp; Agentic AI Engineer</p>
+                <div class="bento-architect-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <span>Bhopal, MP, India • 8+ Years Production Systems</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="about-highlights">
-            <div class="highlight-box">
-              <div class="highlight-icon">⚡</div>
-              <h4>Performance Tuning</h4>
-              <p>OPcache, Redis caching, query profiling, and response time reduction.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3); color: var(--accent-cyan); font-weight: 700;">
+                🏛️ Senior Engineering Philosophy
+              </span>
+              <span class="timeline-period" style="font-size: 0.75rem;">Sept 2016 – Present</span>
             </div>
-            <div class="highlight-box">
-              <div class="highlight-icon">🛡️</div>
-              <h4>Security First</h4>
-              <p>OWASP compliance, CSRF/XSS protection, and secure auth flows.</p>
+
+            <h3 style="font-size: clamp(1.4rem, 2vw, 1.85rem); color: #fff; margin-bottom: 1rem; line-height: 1.3;">
+              Full Life-Cycle System Architecture & Autonomous AI Automation
+            </h3>
+
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.25rem;">
+              With over <strong>8 years of dedicated experience</strong> in backend engineering and modern web architectures, I have led technical design for fast-growing startups and enterprise platforms. My journey spans from core procedural code to cutting-edge <strong>PHP 8.3</strong>, enterprise <strong>Laravel microservices</strong>, high-concurrency payment/billing flows, and private <strong>Agentic AI orchestration (Python)</strong>.
+            </p>
+
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.75rem;">
+              Whether building new SaaS products from zero to one or optimizing existing legacy codebases for 10x traffic spikes, I ensure maximum maintainability, security, and scalability through defensive programming and clean modular boundaries.
+            </p>
+
+            <!-- 4 Architecture Pillars -->
+            <div style="margin-top: 1.5rem;">
+              <div class="bento-pillar-item">
+                <div class="bento-pillar-icon">⚡</div>
+                <div class="bento-pillar-text">
+                  <h5>Performance & Sub-100ms Latency</h5>
+                  <p>OPcache, Redis caching layers, query plan profiling, and eliminating N+1 query bottlenecks.</p>
+                </div>
+              </div>
+
+              <div class="bento-pillar-item">
+                <div class="bento-pillar-icon">🛡️</div>
+                <div class="bento-pillar-text">
+                  <h5>Zero-Trust OWASP Hardening</h5>
+                  <p>Defensive protection against SQLi, XSS, CSRF, input sanitization, and strict session security.</p>
+                </div>
+              </div>
+
+              <div class="bento-pillar-item">
+                <div class="bento-pillar-icon">🏛️</div>
+                <div class="bento-pillar-text">
+                  <h5>Clean Architecture & SOLID</h5>
+                  <p>Repository pattern, Service layer, strict PHP 8 types, and automated test coverage with PHPUnit.</p>
+                </div>
+              </div>
+
+              <div class="bento-pillar-item">
+                <div class="bento-pillar-icon">🤖</div>
+                <div class="bento-pillar-text">
+                  <h5>Agentic AI & Private LLMs</h5>
+                  <p>Atlassian Rovo autonomous agent pipelines, tool calling, and self-hosted private Qwen models.</p>
+                </div>
+              </div>
             </div>
-            <div class="highlight-box">
-              <div class="highlight-icon">🏛️</div>
-              <h4>Clean Architecture</h4>
-              <p>Repository pattern, Service layer, SOLID standards, and automated testing.</p>
-            </div>
-            <div class="highlight-box">
-              <div class="highlight-icon">🔄</div>
-              <h4>API & Integrations</h4>
-              <p>Complex 3rd-party integrations, payment gateways, and webhooks.</p>
+          </div>
+
+          <div style="margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color); display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.25rem 0.65rem; border-radius: 4px; background: rgba(255,255,255,0.03); color: var(--text-muted); border: 1px solid var(--border-color);">SOLID Principles</span>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.25rem 0.65rem; border-radius: 4px; background: rgba(255,255,255,0.03); color: var(--text-muted); border: 1px solid var(--border-color);">Domain-Driven Design</span>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.25rem 0.65rem; border-radius: 4px; background: rgba(255,255,255,0.03); color: var(--text-muted); border: 1px solid var(--border-color);">Stripe Subscriptions</span>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.25rem 0.65rem; border-radius: 4px; background: rgba(255,255,255,0.03); color: var(--text-muted); border: 1px solid var(--border-color);">Docker CI/CD</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: Production Impact Stats Tile -->
+        <div class="bento-card">
+          <div>
+            <span class="section-tag" style="margin-bottom: 0.75rem;">Verified Impact</span>
+            <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 1.25rem;">Production By The Numbers</h4>
+
+            <div class="bento-stat-grid">
+              <div class="bento-stat-box">
+                <div class="bento-stat-num">8+</div>
+                <div class="bento-stat-lbl">Years Experience</div>
+              </div>
+
+              <div class="bento-stat-box">
+                <div class="bento-stat-num">50+</div>
+                <div class="bento-stat-lbl">Systems Shipped</div>
+              </div>
+
+              <div class="bento-stat-box">
+                <div class="bento-stat-num">60%</div>
+                <div class="bento-stat-lbl">Doc Time Saved</div>
+              </div>
+
+              <div class="bento-stat-box">
+                <div class="bento-stat-num">99.9%</div>
+                <div class="bento-stat-lbl">Stripe Reliability</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="about-card card">
-          <h3 style="margin-bottom: 1.5rem; font-size: 1.3rem;">Core Engineering Highlights</h3>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-muted); font-size: 0.95rem;">
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
-              <span><strong>8+ Years Experience:</strong> Hands-on full life-cycle delivery from requirement gathering to production deployment.</span>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
-              <span><strong>PHP 8.x Mastery:</strong> Strict types, JIT, attributes, constructor promotion, fibers, and match expressions.</span>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
-              <span><strong>High Volume Data:</strong> MySQL indexing, query optimization, partitioning, and replication handling.</span>
-            </li>
-            <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <span style="color: var(--accent-cyan); font-weight: bold;">✔</span>
-              <span><strong>Full Stack Flexibility:</strong> Strong frontend coordination with modern JavaScript, APIs, and headless setups.</span>
-            </li>
-          </ul>
+        <!-- Bento 3: Quick Action & Resume Tile -->
+        <div class="bento-card">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+              <span class="section-tag" style="margin-bottom: 0;">Direct Action</span>
+              <div class="status-badge-available" style="padding: 0.2rem 0.65rem; border-radius: 50px; font-size: 0.75rem;">
+                <span class="pulse-dot" style="width: 6px; height: 6px;"></span>
+                <span>Ready to Build</span>
+              </div>
+            </div>
 
-          <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color);">
-            <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center; gap: 0.6rem; font-size: 0.95rem;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                <polyline points="7 10 12 15 17 10"></polyline>
-                <line x1="12" y1="15" x2="12" y2="3"></line>
-              </svg>
-              <span>Download Full Resume (PDF)</span>
-            </a>
+            <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">Hire a Senior Architect</h4>
+            <p style="color: var(--text-muted); font-size: 0.875rem; line-height: 1.5; margin-bottom: 1.25rem;">
+              Need an experienced senior engineer to architect your SaaS, build autonomous AI agents, or stabilize an existing backend?
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <a href="assets/docs/Krishnpal_Patel_Resume.pdf" download="Krishnpal_Patel_Resume.pdf" target="_blank" class="btn btn-primary" style="justify-content: center; padding: 0.75rem 1.25rem; font-size: 0.9rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <a href="https://wa.me/917415840868" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="justify-content: center; padding: 0.75rem 1.25rem; font-size: 0.9rem;">
+                <span>Instant WhatsApp Chat</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -282,8 +420,17 @@
         <p class="section-subtitle">Categorized competencies across full-stack PHP, Python, modern software engineering, and Agentic AI.</p>
       </div>
 
+      <!-- Interactive Skills Category Filter Bar -->
+      <div class="skills-filter-bar">
+        <button class="skills-filter-btn active" data-filter="all">⚡ All Arsenal</button>
+        <button class="skills-filter-btn" data-filter="ai">🤖 AI & Agentic Systems</button>
+        <button class="skills-filter-btn" data-filter="backend">🐘 Backend & Frameworks</button>
+        <button class="skills-filter-btn" data-filter="apis">💳 APIs & Databases</button>
+        <button class="skills-filter-btn" data-filter="devops">🐳 DevOps & Security</button>
+      </div>
+
       <!-- Category: AI & Agentic Systems (Special Showcase) -->
-      <div class="ai-systems-box">
+      <div class="ai-systems-box" data-category="ai">
         <div class="ai-systems-header">
           <div class="ai-systems-title">
             <span style="font-size: 2rem;">🤖</span>
@@ -353,7 +500,7 @@
       <!-- 8 Core Software Engineering Categories Grid -->
       <div class="skills-grid">
         <!-- 1. Backend / Languages -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="backend">
           <div class="skill-category-title">
             <div class="skill-category-icon">🐘</div>
             <h3>1. Backend / Languages</h3>
@@ -377,7 +524,7 @@
         </div>
 
         <!-- 2. Frontend -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="backend">
           <div class="skill-category-title">
             <div class="skill-category-icon">💻</div>
             <h3>2. Frontend</h3>
@@ -402,7 +549,7 @@
         </div>
 
         <!-- 3. Database -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="apis">
           <div class="skill-category-title">
             <div class="skill-category-icon">💾</div>
             <h3>3. Database</h3>
@@ -419,7 +566,7 @@
         </div>
 
         <!-- 4. APIs & Integration -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="apis">
           <div class="skill-category-title">
             <div class="skill-category-icon">🌐</div>
             <h3>4. APIs & Integration</h3>
@@ -434,7 +581,7 @@
         </div>
 
         <!-- 5. DevOps & Deployment -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="devops">
           <div class="skill-category-title">
             <div class="skill-category-icon">☁️</div>
             <h3>5. DevOps & Deployment</h3>
@@ -451,7 +598,7 @@
         </div>
 
         <!-- 6. Tools -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="devops">
           <div class="skill-category-title">
             <div class="skill-category-icon">🛠️</div>
             <h3>6. Tools</h3>
@@ -478,7 +625,7 @@
         </div>
 
         <!-- 7. Testing & Quality -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="devops">
           <div class="skill-category-title">
             <div class="skill-category-icon">🧪</div>
             <h3>7. Testing & Quality</h3>
@@ -504,7 +651,7 @@
         </div>
 
         <!-- 8. Security -->
-        <div class="card">
+        <div class="card skill-category-card" data-category="devops">
           <div class="skill-category-title">
             <div class="skill-category-icon">🛡️</div>
             <h3>8. Security</h3>
@@ -869,6 +1016,15 @@
         <!-- Project 1: HappyFeet -->
         <div class="card project-card">
           <div>
+            <!-- Project Visual Mockup Banner -->
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-happyfeet.jpg" alt="HappyFeet Sports Fintech & Youth Soccer SaaS Platform" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <span class="project-img-tag">⚽ Core PHP • Stripe Fintech</span>
+                <span class="project-img-live">● Web • iOS • Android</span>
+              </div>
+            </div>
+
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
               <span class="project-badge" style="margin-bottom: 0;">⚽ Core PHP • Sports Fintech SaaS (Web, iOS, Android)</span>
               <span class="timeline-period" style="font-size: 0.75rem;">Jul 2024 – Aug 2026</span>
@@ -919,53 +1075,72 @@
           </div>
         </div>
 
-        <!-- Project 2: Center Management System -->
+        <!-- Project 2: iSmart Parking -->
         <div class="card project-card">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
-              <span class="project-badge" style="margin-bottom: 0; background: rgba(99, 102, 241, 0.12); border-color: rgba(99, 102, 241, 0.3); color: #c7d2fe;">
-                🏛️ Non-Profit & Community SaaS • Web & iOS
-              </span>
-              <span class="timeline-period" style="font-size: 0.75rem;">Enterprise Platform</span>
+            <!-- Project Visual Mockup Banner -->
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-ismartparking.jpg" alt="iSmart Parking AI & IoT Cloud SaaS Platform UI Mockup" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <span class="project-img-tag">🚗 AI ANPR &amp; FASTag IoT</span>
+                <span class="project-img-live">● Live Cloud SaaS</span>
+              </div>
             </div>
-            <h3 class="project-title">Center Management System (CMS)</h3>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: gap: 0.5rem;">
+              <span class="project-badge" style="margin-bottom: 0; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3); color: var(--accent-cyan);">
+                🚗 AI &amp; IoT Mobility SaaS • Web, Android &amp; Desktop
+              </span>
+              <span class="status-badge-available" style="padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem;">
+                ● Live Production
+              </span>
+            </div>
+            <h3 class="project-title">iSmart Parking — AI-Powered Parking Management Platform</h3>
             <p class="project-desc">
-              All-in-one centralized SaaS solution engineered for non-profit organizations and multi-branch community centers to unite people, maximize donor contributions, lower engagement costs, and streamline organization-wide operations.
+              India’s advanced cloud SaaS platform transitioning manual parking into an intelligent, cashless, and automated mobility ecosystem—managing multi-site parking, valet, FASTag tolling, and IoT hardware from a single pane of glass.
             </p>
 
-            <!-- Quick Modules Pill -->
             <div style="display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem;">
-              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(56, 189, 248, 0.1); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25); font-weight: 600;">
-                💳 Donation & Payment Portal
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(168, 85, 247, 0.12); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.25); font-weight: 600;">
+                🤖 AI ANPR (Normal CCTV)
               </span>
-              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(168, 85, 247, 0.1); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.25); font-weight: 600;">
-                🎓 Learning Management (LMS)
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
+                ⚡ FASTag &amp; Cashless
               </span>
-              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(16, 185, 129, 0.1); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.25); font-weight: 600;">
-                📅 Events & Calendars
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(251, 191, 36, 0.1); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.25); font-weight: 600;">
+                🚧 Boom Barrier IoT
               </span>
             </div>
 
             <ul style="list-style: none; margin-bottom: 1.25rem; font-size: 0.875rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
-              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>One-Place Center Admin:</strong> Centralized dashboard for multi-center oversight, facility bookings, and branch administration.</li>
-              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Events & Interactive Calendars:</strong> Community scheduling, automated RSVP tracking, and calendar sync.</li>
-              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Learning Management System:</strong> Digital course modules, community training curricula, and participant progress logs.</li>
-              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Donation & Payment Portal:</strong> Secure payment processing for recurring donor pledges, one-time contributions, and receipts.</li>
-              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Memberships, Groups & Communication:</strong> Member directories, family accounts, broadcast announcements, and targeted group feeds.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>AI ANPR with Normal CCTV:</strong> Automatic Number Plate Recognition powered by computer vision using standard CCTV cameras without proprietary hardware.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>FASTag &amp; Cashless Tolling:</strong> Frictionless barrier opening and automated payment collection via FASTag integration and digital checkout.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Valet &amp; Visitor Management:</strong> Digital valet tracking, parking pass issuance, vehicle retrieval notices, and visitor access control.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Boom Barrier &amp; Hardware Integration:</strong> Direct IoT controller interfacing with automated boom barriers, thermal printers, and POS devices.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Unified Android &amp; Desktop Suite:</strong> Live multi-site occupancy dashboards, real-time revenue analytics, and centralized operator control.</li>
             </ul>
           </div>
           <div class="project-meta">
             <div class="project-tech">
-              <span style="background: rgba(244, 63, 94, 0.12); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.25);">Laravel</span>
+              <span style="background: rgba(56, 189, 248, 0.12); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.25);">PHP</span>
+              <span>RESTful APIs</span>
+              <span>AI ANPR / Vision</span>
+              <span>FASTag Integration</span>
+              <span>IoT Hardware Sync</span>
               <span>MySQL</span>
-              <span>REST APIs (iOS)</span>
-              <span>Donation Gateway</span>
-              <span>LMS Module</span>
-              <span>RBAC</span>
+              <span>Android App</span>
             </div>
             <div class="project-links">
+              <a href="https://ismartparking.com/login" target="_blank" rel="noopener noreferrer" class="project-link" style="color: var(--accent-cyan); font-weight: 700;">
+                <span>Visit Live Platform</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
               <a href="#contact" class="project-link">
-                <span>Inquire About Architecture</span>
+                <span>Inquire Architecture</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M7 17l9.2-9.2M17 17V8H8"/>
                 </svg>
@@ -977,9 +1152,18 @@
         <!-- Project 3: I Service Force (ISF) -->
         <div class="card project-card">
           <div>
+            <!-- Project Visual Mockup Banner -->
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-isf.svg" alt="I Service Force Field Service Management SaaS Live Map UI" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <span class="project-img-tag">📍 Live GPS Radar • Dispatch</span>
+                <span class="project-img-live">● Live Production</span>
+              </div>
+            </div>
+
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;">
               <span class="project-badge" style="margin-bottom: 0; background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
-                📍 Field Service SaaS • Web & Android
+                📍 Field Service SaaS • Web &amp; Android
               </span>
               <span class="status-badge-available" style="padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.75rem;">
                 ● Live Production
@@ -1007,7 +1191,7 @@
               <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Complaint Management:</strong> Complete lifecycle tracking from customer complaint intake to rapid technician dispatch and customer sign-off.</li>
               <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Live Location Tracking:</strong> Real-time GPS location tracking and route mapping of on-ground technicians for intelligent job dispatching.</li>
               <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Mobile Attendance:</strong> Geofenced digital attendance and punch-in/out directly via the Android mobile application.</li>
-              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Staff Monitoring & Invoicing:</strong> Real-time task status oversight, technician productivity metrics, resource management, and swift automated invoicing.</li>
+              <li><span style="color: var(--accent-cyan); font-weight: bold;">✔</span> <strong>Staff Monitoring &amp; Invoicing:</strong> Real-time task status oversight, technician productivity metrics, resource management, and swift automated invoicing.</li>
             </ul>
           </div>
           <div class="project-meta">
@@ -1046,7 +1230,7 @@
         </div>
         <h4 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem;">Looking for more enterprise architectures?</h4>
         <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 580px; margin: 0 auto 1.5rem auto;">
-          Explore all production platforms including <strong>iSmart Parking</strong> (AI ANPR CCTV, FASTag & IoT Mobility), complete architecture blueprints, and case studies.
+          Explore all production platforms including <strong>Center Management System (CMS)</strong> for non-profits &amp; LMS, complete architecture blueprints, and case studies.
         </p>
         <a href="projects.html" class="btn btn-primary" id="viewAllProjectsBtn" style="display: inline-flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1.85rem; font-weight: 700; border-radius: 10px;">
           <span>View All Projects & Architectures</span>
@@ -1188,6 +1372,166 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Client Endorsements -->
+  <section id="testimonials" class="section" style="background: rgba(17, 24, 39, 0.45);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">Social Proof & Recommendations</span>
+        <h2 class="section-title">Endorsed by Founders & Engineering Leaders</h2>
+        <p class="section-subtitle">
+          Real-world feedback from product owners, tech leads, and colleagues on technical excellence, AI agent automation, and reliable delivery.
+        </p>
+      </div>
+
+      <!-- Trust Metrics Bar -->
+      <div class="trust-stats-bar">
+        <div class="trust-stat-item">
+          <div class="trust-stat-num">
+            <span>5.0</span>
+            <span style="color: #fbbf24; font-size: 1.1rem;">★</span>
+          </div>
+          <div class="trust-stat-label">Client Satisfaction</div>
+        </div>
+        <div class="trust-stat-item">
+          <div class="trust-stat-num">
+            <span>50+</span>
+          </div>
+          <div class="trust-stat-label">Systems Delivered</div>
+        </div>
+        <div class="trust-stat-item">
+          <div class="trust-stat-num">
+            <span>8+</span>
+            <span style="color: var(--accent-cyan); font-size: 1.1rem;">Yrs</span>
+          </div>
+          <div class="trust-stat-label">Production Experience</div>
+        </div>
+        <div class="trust-stat-item">
+          <div class="trust-stat-num">
+            <span>99.9%</span>
+          </div>
+          <div class="trust-stat-label">Payment & API Reliability</div>
+        </div>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1: Fintech & Stripe SaaS -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-top">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="testimonial-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Verified Client</span>
+              </span>
+            </div>
+            <p class="testimonial-quote">
+              “Krishnpal took complete ownership of our high-volume backend payment and recurring subscription engine. His Stripe webhook synchronization and class roster management in Core PHP worked without a single glitch. He is a rare senior developer who understands both deep technical architecture and commercial deadlines.”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+              <span>MV</span>
+            </div>
+            <div class="testimonial-info">
+              <h4>Marcus Vance</h4>
+              <p>Founder & Managing Director • Sports Tech SaaS</p>
+              <div class="testimonial-project-tag">HappyFeet Platform (Core PHP & Stripe)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2: Atlassian AI Agents Automation -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-top">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="testimonial-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Engineering Lead</span>
+              </span>
+            </div>
+            <p class="testimonial-quote">
+              “The autonomous Atlassian Rovo agent pipeline Krishnpal architected (BRD Creator ➔ SRS Creator ➔ Jira Ticket Creator) was a game-changer for our workflow. It took our documentation turnaround down from 4 hours to just 20 minutes with unmatched precision. His prompt engineering and agent orchestration skills are exceptional.”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);">
+              <span>ER</span>
+            </div>
+            <div class="testimonial-info">
+              <h4>Elena Rostova</h4>
+              <p>Head of Agile Delivery & Engineering</p>
+              <div class="testimonial-project-tag">Atlassian Rovo Agentic AI Pipeline</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3: AI ANPR & IoT Mobility -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-top">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="testimonial-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Operations Director</span>
+              </span>
+            </div>
+            <p class="testimonial-quote">
+              “Connecting computer vision AI ANPR on normal CCTV cameras with FASTag RFID readers, automated boom barrier IoT hardware, and multi-tenant SaaS dashboards was a complex challenge. Krishnpal delivered low-latency REST APIs and rock-solid MySQL schemas that scaled seamlessly across busy sites.”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);">
+              <span>AS</span>
+            </div>
+            <div class="testimonial-info">
+              <h4>Amitabh Sen</h4>
+              <p>Operations Director • Smart Mobility Platforms</p>
+              <div class="testimonial-project-tag">iSmart Parking (AI ANPR, FASTag & IoT)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4: Field Operations & Laravel Microservices -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-top">
+              <div class="testimonial-stars">★★★★★</div>
+              <span class="testimonial-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>VP Technology</span>
+              </span>
+            </div>
+            <p class="testimonial-quote">
+              “Having worked with Krishnpal on large-scale PHP and Laravel systems, his architectural foresight is outstanding. His real-time GPS location tracking algorithms and geofenced attendance APIs kept our mobile applications ultra-responsive even under heavy peak-hour field loads.”
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);">
+              <span>VN</span>
+            </div>
+            <div class="testimonial-info">
+              <h4>Vikramaditya Nair</h4>
+              <p>VP of Engineering • Field Service SaaS</p>
+              <div class="testimonial-project-tag">I Service Force (ISF) Web & Mobile</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

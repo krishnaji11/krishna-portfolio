@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Active Navigation Link on Scroll
+  // Active Navigation Link on Scroll (Scrollspy)
   const sections = document.querySelectorAll('section[id]');
   const navItems = document.querySelectorAll('.nav-link');
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     yearElement.textContent = new Date().getFullYear();
   }
 
-  // Contact Form Feedback Handler
+  // Contact Form Feedback Handler (Safely scoped)
   const contactForm = document.getElementById('contactForm');
   const formFeedback = document.getElementById('formFeedback');
 
@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.disabled = true;
       submitBtn.innerHTML = 'Sending message...';
 
-      // Simulate sending
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
@@ -85,12 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }, 1000);
     });
+  }
+
   // Typewriter Animation for Hero Roles
   const typewriterElement = document.getElementById('typewriterText');
   if (typewriterElement) {
     const roles = [
       'Senior Full-Stack Engineer',
-      'Agentic AI Engineer (Python)',
+      'Agentic AI Engineer',
       'DevOps & Docker Specialist',
       'Laravel Backend Architect',
       'Atlassian Agent Builder'
@@ -98,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    const typingSpeed = 100;
-    const deletingSpeed = 50;
+    const typingSpeed = 90;
+    const deletingSpeed = 45;
     const pauseDelay = 1800;
 
     const typeRole = () => {
@@ -118,12 +119,96 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         roleIndex = (roleIndex + 1) % roles.length;
-        setTimeout(typeRole, 400);
+        setTimeout(typeRole, 350);
       } else {
         setTimeout(typeRole, isDeleting ? deletingSpeed : typingSpeed);
       }
     };
 
     typeRole();
+  }
+
+  // Interactive Multi-Tab Terminal Preview in Hero
+  const terminalTabs = document.querySelectorAll('.terminal-tab');
+  const terminalPanes = document.querySelectorAll('.terminal-pane');
+  const terminalCopyBtn = document.getElementById('terminalCopyBtn');
+
+  if (terminalTabs.length && terminalPanes.length) {
+    terminalTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabTarget = tab.getAttribute('data-tab');
+        
+        terminalTabs.forEach(t => t.classList.remove('active'));
+        terminalPanes.forEach(p => p.classList.remove('active'));
+
+        tab.classList.add('active');
+        const activePane = document.getElementById(`pane-${tabTarget}`);
+        if (activePane) {
+          activePane.classList.add('active');
+        }
+      });
+    });
+  }
+
+  if (terminalCopyBtn) {
+    terminalCopyBtn.addEventListener('click', () => {
+      const activePane = document.querySelector('.terminal-pane.active');
+      if (activePane) {
+        navigator.clipboard.writeText(activePane.innerText).then(() => {
+          const originalHTML = terminalCopyBtn.innerHTML;
+          terminalCopyBtn.innerHTML = '<span>Copied! ✓</span>';
+          terminalCopyBtn.style.color = '#34d399';
+          terminalCopyBtn.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+
+          setTimeout(() => {
+            terminalCopyBtn.innerHTML = originalHTML;
+            terminalCopyBtn.style.color = '';
+            terminalCopyBtn.style.borderColor = '';
+          }, 2000);
+        });
+      }
+    });
+  }
+
+  // Mouse Spotlight Effect on Interactive Cards
+  const spotlightCards = document.querySelectorAll('.card, .bento-card, .project-card, .testimonial-card, .timeline-item');
+  spotlightCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+
+  // Interactive Skills Category Filter Tabs
+  const skillsFilterBtns = document.querySelectorAll('.skills-filter-btn');
+  const skillCategories = document.querySelectorAll('.skill-category-card, .ai-systems-box');
+
+  if (skillsFilterBtns.length) {
+    skillsFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        skillsFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        skillCategories.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (filter === 'all') {
+            card.style.display = '';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          } else if (cardCat && cardCat.includes(filter)) {
+            card.style.display = '';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
   }
 });
